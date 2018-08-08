@@ -5,6 +5,7 @@ import AboutPage from './components/pages/AboutPage';
 import ProjectPage from './components/pages/ProjectPage';
 import ContactPage from './components/pages/ContactPage';
 import TopHeader from './components/header/TopHeader';
+import ImagePage from './components/pages/ImagePage';
 
 const App = () => 
  
@@ -18,6 +19,7 @@ const App = () =>
           <Route path='/about' exact component={AboutPage} />
           <Route path='/projects' exact component={ProjectPage} />
           <Route path='/contact' exact component={ContactPage} />
+          <Route path='/image/:name' exact component={ImagePage} />
         </div>
         
       </div>

@@ -1,5 +1,7 @@
 import React from 'react';
 import {Segment, Header, Divider, Card, Image} from 'semantic-ui-react';
+import {Link} from 'react-router-dom'
+
 
 const pages=[
     {
@@ -51,7 +53,7 @@ const Event = () => (
                         <Image src={page.img} alt="not available"/>
                         <Card.Content>
                             <Card.Description>
-                                {page.name}
+                                <Link to={`/image/${page.name}?img=${page.img}`}>  {page.name}</Link>
                             </Card.Description>
                         </Card.Content>
                     </Card>    
