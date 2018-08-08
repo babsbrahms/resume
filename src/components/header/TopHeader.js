@@ -16,7 +16,7 @@ class TopHeader extends Component {
         return (
             <div className='header'>
                 <h2 className='text' style={{marginTop: 25}}><Link className='link' to='/'>Home </Link></h2>
-                <h2 className='text'><Link className='link' to='/aboutus'>About Me </Link></h2>
+                <h2 className='text'><Link className='link' to='/about'>About Me </Link></h2>
                 <h2 className='text' 
                     onMouseOver={this.show} onMouseOut={this.hide}>
                     <Link  className='link' to='/projects'>Projects </Link>

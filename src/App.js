@@ -15,7 +15,7 @@ const App = () =>
           
           <br/>
           <Route path='/' exact component={HomePage} />
-          <Route path='/aboutus' exact component={AboutPage} />
+          <Route path='/about' exact component={AboutPage} />
           <Route path='/projects' exact component={ProjectPage} />
           <Route path='/contact' exact component={ContactPage} />
         </div>

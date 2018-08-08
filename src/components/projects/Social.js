@@ -1,5 +1,5 @@
 import React from 'react';
-import {Segment, Header, Divider, Card, Image} from 'semantic-ui-react';
+import {Segment, Header, Divider, Card} from 'semantic-ui-react';
 
 const Social = () => (
     <div>
@@ -19,7 +19,7 @@ const Social = () => (
             <Divider/>
             <div className='ui link cards'>
                 <Card raised color='red'>      
-                    <Image src="" alt="not available"/>
+                    
                     <Card.Content>
                         <Card.Description>
                             Mobile social media app.
