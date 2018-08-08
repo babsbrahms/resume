@@ -11,7 +11,7 @@ class ContactPage extends Component {
                         
                         <Message.Content>
                             <Message.Header as='h3'>
-                                Contact Us
+                                Contact Me
                             </Message.Header>
                             <p>You can contact me using the below information</p>
                             

@@ -42,7 +42,7 @@ const Phvid = () => (
         <Segment>
             <em> summary</em>
             <p>
-            phvid is the first app I ever built. It is a social-media app that permits users to add posts. Each post can contain an image and descriptions or either. Other users can like or dis-like the post; follow and un-follow the user. Finally, the app has a chat section for group chats.
+            phvid is the first app I ever built. It is a social-media app that permits users to add posts. Each post can contain an image and descriptions or either. Users can like or dis-like post; follow and un-follow other users. Finally, the app has a chat section for group chats.
             </p>
             <Divider/>
             <div className='ui link cards'>

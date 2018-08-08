@@ -42,7 +42,7 @@ const Event = () => (
             <em> summary</em>
            
             <p>
-            This is a react app which allow users to plan their events and share it with other users. I utilizes google api to share event's location.
+            This is a react app which allow users to plan their events and share it with other users. I utilizes google api to share events location.
             </p>
             <Divider/>
             <div className='ui link cards'>

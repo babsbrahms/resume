@@ -33,7 +33,7 @@ const Clocks = () => (
         <Segment>
             <em> summary</em>
             <p>
-            It is a react-native app that is built for android devices. It has a stopwatch, timer and alarm which is written in pure JavaScript and no packages like moment was used.
+            It is a react-native app that is built for android devices. It has a stopwatch, timer and alarm which is written in pure JavaScript and react-native.
             </p>
             <Divider/>
             <div className='ui link cards'>

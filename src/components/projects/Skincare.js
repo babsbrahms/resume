@@ -71,7 +71,7 @@ const Skincare = () => (
         <Segment>
             <em> summary</em>
             <p>
-            I made this app / web site for my sister's store. The app has a shopping section, blog section and a CMS to manage both the shopping and the blog. Furthermore, there is a section for 'production of the week'.In the shopping section, users can filter their search with the click of a button based on the product categories offered by the store.
+            I made this app / web site for my sister's store. The app has a shopping section, blog section and a CMS to manage both the shopping and the blog. Furthermore, there is a section for 'production of the week'.In the shopping section, users can filter their searches with the click of a button based on the product categories offered by the store.
             </p>
             <Divider/>
             <div className='ui link cards'>
