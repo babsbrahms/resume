@@ -11,7 +11,6 @@ const ImagePage = ({match, location}) => (
             <Card.Content>
                 <Card.Header>
                    {match.params.name}
-                   <p>{location.search.split('?img=')[1]}</p>
                 </Card.Header>
             </Card.Content>
         </Card>
