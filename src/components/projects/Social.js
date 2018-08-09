@@ -1,33 +1,16 @@
 import React from 'react';
-import {Segment, Header, Divider, Card} from 'semantic-ui-react';
+import {Segment, Divider} from 'semantic-ui-react';
+import AddProject from "../AddProject"
+
+const pages =[];
+
+const title = 'Social';
+
+const summary = 'I am currently working on a new social-media project that utilizes react native ...';
 
 const Social = () => (
     <div>
-        <Segment>
-            <Header>
-                <Header.Content>
-                    <Header.Subheader>
-                        Social
-                        
-                    </Header.Subheader>
-                </Header.Content>
-            </Header>
-        </Segment>
-        <Segment>
-            summary
-            <p>I am currently working on a new social-media project that utilizes react native ...</p>
-            <Divider/>
-            <div className='ui link cards'>
-                <Card raised color='red'>      
-                    
-                    <Card.Content>
-                        <Card.Description>
-                            Mobile social media app.
-                        </Card.Description>
-                    </Card.Content>
-                </Card>
-            </div>
-        </Segment>
+    <AddProject title={title} summary={summary} pages={pages}  />
         <Segment>
         <em>some technologies and packages used</em>
         <ul>
@@ -37,6 +20,10 @@ const Social = () => (
 
             <li> <b>Firebase </b>: Use firebase for authenication, storage and database </li>
         </ul>
+        <Divider/>
+        <em>Other packages used</em>
+        <p>will be updated soon...</p>
+        
         </Segment>
 
     </div>

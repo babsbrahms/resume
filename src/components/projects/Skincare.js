@@ -1,6 +1,6 @@
 import React from 'react';
-import {Segment, Header, Divider, Card, Image} from 'semantic-ui-react';
-import {Link} from 'react-router-dom'
+import {Segment, Divider} from 'semantic-ui-react';
+import AddProject from "../AddProject"
 
 
 const pages=[
@@ -59,36 +59,14 @@ const pages=[
     },
 ]
 
+
+const title = 'Skincare';
+
+const summary = "I made this app / web site for my sister's store. The app has a shopping section, blog section and a CMS to manage both the shopping and the blog. Furthermore, there is a section for 'production of the week'.In the shopping section, users can filter their searches with the click of a button based on the product categories offered by the store.";
+
 const Skincare = () => (
     <div>
-        <Segment>
-            <Header>
-                <Header.Content>
-                    <Header.Subheader>
-                        Skincare
-                    </Header.Subheader>
-                </Header.Content>
-            </Header>
-        </Segment>
-        <Segment>
-            <em> summary</em>
-            <p>
-            I made this app / web site for my sister's store. The app has a shopping section, blog section and a CMS to manage both the shopping and the blog. Furthermore, there is a section for 'production of the week'.In the shopping section, users can filter their searches with the click of a button based on the product categories offered by the store.
-            </p>
-            <Divider/>
-            <div className='ui link cards'>
-                {pages.map((page, index)=>
-                    <Card raised key={index.toString()} color='red'>   
-                        <Image src={page.img} alt="not available"/>
-                        <Card.Content>
-                            <Card.Description>
-                                <Link to={`/image/${page.name}?img=${page.img}`}>  {page.name}</Link>
-                            </Card.Description>
-                        </Card.Content>
-                    </Card>    
-                )}
-            </div>
-        </Segment>
+        <AddProject title={title} summary={summary} pages={pages}  />
         <Segment>
         <em>some technologies and packages used</em>
         <ul>

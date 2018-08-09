@@ -1,7 +1,6 @@
 import React from 'react';
-import {Segment, Header, Divider, Card, Image} from 'semantic-ui-react';
-import {Link} from 'react-router-dom'
-
+import {Segment, Divider} from 'semantic-ui-react';
+import AddProject from "../AddProject"
 
 const pages=[
     {
@@ -30,37 +29,13 @@ const pages=[
     },
 ]
 
+const title = 'Phvid';
+
+const summary = 'phvid is the first app I ever built. It is a social-media app that permits users to add posts. Each post can contain an image and descriptions or either. Users can like or dis-like post; follow and un-follow other users. Finally, the app has a chat section for group chats.';
+
 const Phvid = () => (
     <div>
-        <Segment>
-            <Header>
-                <Header.Content>
-                    <Header.Subheader>
-                        Phvid
-                    </Header.Subheader>
-                </Header.Content>
-            </Header>
-        </Segment>
-        <Segment>
-            <em> summary</em>
-            <p>
-            phvid is the first app I ever built. It is a social-media app that permits users to add posts. Each post can contain an image and descriptions or either. Users can like or dis-like post; follow and un-follow other users. Finally, the app has a chat section for group chats.
-            </p>
-            <Divider/>
-            <div className='ui link cards'>
-                {pages.map((page, index)=>
-                    <Card raised key={index.toString()} color='red'>  
-                        <Image src={page.img} alt="not available" />
-                        <Card.Content>
-                            <Card.Description>
-                                <Link to={`/image/${page.name}?img=${page.img}`}>  {page.name}</Link>
-                            </Card.Description>
-                        </Card.Content>
-                    </Card>    
-                )}
-               
-            </div>
-        </Segment>
+        <AddProject title={title} summary={summary} pages={pages}  />
         <Segment>
             <em>some technologies and packages used</em>
             <ul>

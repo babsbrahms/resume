@@ -1,6 +1,6 @@
 import React from 'react';
-import {Segment, Header, Divider, Card, Image,} from 'semantic-ui-react';
-import {Link} from 'react-router-dom'
+import {Segment, Divider} from 'semantic-ui-react';
+import AddProject from "../AddProject"
 
 const pages =[
     {
@@ -19,39 +19,15 @@ const pages =[
         img: 'https://firebasestorage.googleapis.com/v0/b/fir-site-3277b.appspot.com/o/Screenshot%20(stopwatch).png?alt=media&token=c9d4dc15-49c3-4d76-b8d3-07cffaccea0d',
         name: 'Stopwatch screen'
     },
-]
+];
+
+const title = 'Clocks';
+
+const summary = 'It is a react-native app that is built for android devices. It has a stopwatch, timer and alarm which is written in pure JavaScript and react-native.';
+
 const Clocks = () => (
     <div>
-        <Segment>
-            <Header>
-                <Header.Content>
-                    <Header.Subheader>
-                        Clocks
-                    </Header.Subheader>
-                </Header.Content>
-            </Header>
-        </Segment>
-        <Segment>
-            <em> summary</em>
-            <p>
-            It is a react-native app that is built for android devices. It has a stopwatch, timer and alarm which is written in pure JavaScript and react-native.
-            </p>
-            <Divider/>
-            <div className='ui link cards'>
-                {pages.map((page, index)=>
-                    <Card raised key={index.toString()} color='red'>    
-                        <Image src={page.img} alt="not available"/>
-                        <Card.Content>
-                            <Card.Description>
-                                <Link to={`/image/${page.name}?img=${page.img}`}>  {page.name}</Link>
-                               
-                                
-                            </Card.Description>
-                        </Card.Content>
-                    </Card>    
-                )}
-            </div>
-        </Segment>
+    <AddProject title={title} summary={summary} pages={pages}  />
         <Segment>
         <em>some technologies and packages used</em>
             <ul>

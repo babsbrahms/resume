@@ -1,6 +1,6 @@
 import React from 'react';
-import {Segment, Header, Divider, Card, Image} from 'semantic-ui-react';
-import {Link} from 'react-router-dom'
+import {Segment, Divider} from 'semantic-ui-react';
+import AddProject from "../AddProject"
 
 
 const pages=[
@@ -28,38 +28,15 @@ const pages=[
         img: 'https://firebasestorage.googleapis.com/v0/b/fir-site-3277b.appspot.com/o/Screenshot%20(27).png?alt=media&token=69f5b9e1-59f9-4c9a-aac3-7cea6c912d70',
         name: 'Profile page'
     },
-]
+];
+
+const title = 'E-vent';
+
+const summary = "This is a react app which allow users to plan their events and share it with other users. I utilizes google api to share events location.";
+
 const Event = () => (
     <div>
-        <Segment>
-            <Header>
-                <Header.Content>
-                    <Header.Subheader>
-                        E-vent
-                    </Header.Subheader>
-                </Header.Content>
-            </Header>
-        </Segment>
-        <Segment>
-            <em> summary</em>
-           
-            <p>
-            This is a react app which allow users to plan their events and share it with other users. I utilizes google api to share events location.
-            </p>
-            <Divider/>
-            <div className='ui link cards'>
-                {pages.map((page, index)=>
-                    <Card raised key={index.toString()} color='red'>  
-                        <Image src={page.img} alt="not available"/>
-                        <Card.Content>
-                            <Card.Description>
-                                <Link to={`/image/${page.name}?img=${page.img}`}>  {page.name}</Link>
-                            </Card.Description>
-                        </Card.Content>
-                    </Card>    
-                )}
-            </div>
-        </Segment>
+        <AddProject title={title} summary={summary} pages={pages}  />
         <Segment>
         <em>some technologies and packages used</em>
             <ul>
