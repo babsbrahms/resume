@@ -7,7 +7,8 @@ const ImagePage = ({match, location}) => (
     <Segment>
         <Card fluid>
             {/* <Image src={`${qs.parse(location.search).img}=media&token=${qs.parse(location.search).token}`} /> */}
-            <Image src={location.search.split('?img=')[1]} />
+            {/* location.search.split('?img=')[1] */}
+            <Image src={location.search.replace('?img=','')}  />
             <Card.Content>
                 <Card.Header>
                    {match.params.name}

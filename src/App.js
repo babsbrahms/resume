@@ -12,7 +12,7 @@ const App = () =>
     (
       <div style={{padding: 0, margin: 0}}>
       <TopHeader />
-        <div className='ui container'>
+        <div style={{width: '90%', margin: 'auto'}}>
           
           <br/>
           <Route path='/' exact component={HomePage} />

@@ -47,6 +47,9 @@ class AboutPage extends Component {
                         <List.Item>Semantic UI</List.Item>
                         <List.Item>Linus Commands</List.Item>
                         <List.Item>Unit testing with jest</List.Item>
+                        <List.Item>Python</List.Item>
+                        
+
                     </List>
                 </Segment>
             </div>
