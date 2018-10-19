@@ -27,7 +27,7 @@ const summary = 'It is a react-native app that is built for android devices. It 
 
 const Clocks = () => (
     <div>
-    <AddProject title={title} summary={summary} pages={pages}  />
+    <AddProject title={title} summary={summary} pages={pages} enlarge={false} />
         <Segment>
         <em>some technologies and packages used</em>
             <ul>

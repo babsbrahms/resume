@@ -35,7 +35,28 @@ const pages =[
         img: 'https://firebasestorage.googleapis.com/v0/b/fir-site-3277b.appspot.com/o/Screenshot%20(50).png?alt=media&token=4d02b245-d86a-46d5-bf62-b933ed758d71',
         name: 'Chat'
     },
+    {
+        img: 'https://firebasestorage.googleapis.com/v0/b/fir-site-3277b.appspot.com/o/Screenshot%20(57).png?alt=media&token=d6f920e9-7418-4601-8b9e-a58c739356cf',
+        name: 'Authenicate'
+    },
+    {
+        img: 'https://firebasestorage.googleapis.com/v0/b/fir-site-3277b.appspot.com/o/Screenshot%20(58).png?alt=media&token=98d94682-bc52-488b-8566-3b735a9f6592',
+        name: 'Sign Up'
+    },
+    {
+        img: 'https://firebasestorage.googleapis.com/v0/b/fir-site-3277b.appspot.com/o/Screenshot%20(52).png?alt=media&token=ac25f0e4-22ab-47a8-a24d-fb4fc7c802af',
+        name: 'Loading'
+    },
+    {
+        img: 'https://firebasestorage.googleapis.com/v0/b/fir-site-3277b.appspot.com/o/Screenshot%20(54).png?alt=media&token=6450ffad-7b12-4f77-95cd-978e7f3c588d',
+        name: 'Camera'
+    },
+    {
+        img: 'https://firebasestorage.googleapis.com/v0/b/fir-site-3277b.appspot.com/o/Screenshot%20(55).png?alt=media&token=54770997-41ec-4fdd-8155-699669151be7',
+        name: 'Images'
+    }
 ];
+
 
 const title = 'Social';
 
@@ -43,7 +64,7 @@ const summary = "Social is a react-native project that allows users to post pict
 
 const Social = () => (
     <div>
-    <AddProject title={title} summary={summary} pages={pages}  />
+    <AddProject title={title} summary={summary} pages={pages} enlarge={false} />
         <Segment>
         <em>some technologies and packages used</em>
         <ul>

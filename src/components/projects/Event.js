@@ -36,7 +36,7 @@ const summary = "This is a react app which allow users to plan their events and 
 
 const Event = () => (
     <div>
-        <AddProject title={title} summary={summary} pages={pages}  />
+        <AddProject title={title} summary={summary} pages={pages} enlarge/>
         <Segment>
         <em>some technologies and packages used</em>
             <ul>

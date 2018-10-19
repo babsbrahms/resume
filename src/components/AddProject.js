@@ -3,7 +3,7 @@ import {Segment, Header, Divider, Card, Image} from 'semantic-ui-react';
 import {Link} from 'react-router-dom'
 import PropTypes from 'prop-types';
 
-const AddProject = ({pages, summary,title}) => (
+const AddProject = ({pages, summary,title, enlarge}) => (
     <div>
     <Segment>
             <Header>
@@ -26,7 +26,9 @@ const AddProject = ({pages, summary,title}) => (
                         <Image src={page.img} alt="not available" />
                         <Card.Content>
                             <Card.Description>
-                                <Link to={`/image/${page.name}?img=${page.img}`}>  {page.name}</Link>
+                                {enlarge && <Link to={`/image/${page.name}?img=${page.img}`}>  {page.name}</Link>}
+                                {!enlarge && page.name}
+                                
                             </Card.Description>
                         </Card.Content>
                     </Card>    
@@ -45,5 +47,6 @@ AddProject.propTypes={
         img: PropTypes.string
     })),
     summary: PropTypes.string,
-    title: PropTypes.string
+    title: PropTypes.string,
+    enlarge: PropTypes.bool
 }

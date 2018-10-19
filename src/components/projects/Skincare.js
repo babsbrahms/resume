@@ -66,7 +66,7 @@ const summary = "I made this app / web site for my sister's store. The app has a
 
 const Skincare = () => (
     <div>
-        <AddProject title={title} summary={summary} pages={pages}  />
+        <AddProject title={title} summary={summary} pages={pages} enlarge />
         <Segment>
         <em>some technologies and packages used</em>
         <ul>

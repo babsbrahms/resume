@@ -35,7 +35,7 @@ const summary = 'phvid is the first app I ever built. It is a social-media app t
 
 const Phvid = () => (
     <div>
-        <AddProject title={title} summary={summary} pages={pages}  />
+        <AddProject title={title} summary={summary} pages={pages} enlarge />
         <Segment>
             <em>some technologies and packages used</em>
             <ul>
