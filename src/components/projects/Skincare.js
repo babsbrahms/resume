@@ -62,7 +62,7 @@ const pages=[
 
 const title = 'Skincare';
 
-const summary = "I made this app / web site for my sister's store. The app has a shopping section, blog section and a CMS to manage both the shopping and the blog. Furthermore, there is a section for 'production of the week'.In the shopping section, users can filter their searches with the click of a button based on the product categories offered by the store.";
+const summary = "I made this app / website for my sister's store. The app has a shopping section, blog section and a CMS to manage both the shopping and the blog. Furthermore, there is a section for 'production of the week'. In the shopping section, users can filter their searches with the click of a button based on the product categories offered by the store.";
 
 const Skincare = () => (
     <div>
@@ -70,7 +70,7 @@ const Skincare = () => (
         <Segment>
             <Header>
                 <Header.Content>
-                    Other e-commerce website with include
+                    Other e-commerce websites with include
                 </Header.Content>
             </Header>
             <ol>

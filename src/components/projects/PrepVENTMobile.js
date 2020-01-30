@@ -32,7 +32,7 @@ const pages=[
 
 const title = 'PrepVENT Invite';
 
-const summary = "This is mobile app use to create, edit and share invitation letter and event poster. It is available on android and ios.";
+const summary = "This is a mobile app for creating, editing and sharing invitation letter and event poster. It is available on android play store and ios app store.";
 
 const PrepVENTMobile = () => (
     <div>
