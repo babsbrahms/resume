@@ -60,7 +60,7 @@ const pages =[
 
 const title = 'Social';
 
-const summary = "Social is a react-native project that allows users to post pictures/videos and chat with other users. It uses firebase services and I used react-native apis like Animated, PanResponder and Dimension to make jesture animations. It only works on Android currently. ";
+const summary = "Social is a react-native project that allows users to post pictures/videos and chat with other users. It uses firebase services and I used react-native apis like Animated, PanResponder and Dimension to make gesture animations. It only works on Android currently. ";
 
 const Social = () => (
     <div>

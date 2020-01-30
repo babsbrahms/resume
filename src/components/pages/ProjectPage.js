@@ -1,18 +1,20 @@
 import React from 'react'
 import { Tab, Segment, Message } from 'semantic-ui-react'
 
-import Phvid from '../projects/phvid';
+// import Phvid from '../projects/phvid';
 import Skincare from '../projects/Skincare';
 import Event from '../projects/Event';
 import Clocks from '../projects/Clocks';
 import Social from '../projects/Social';
+import EventMobile from '../projects/EventMobile';
 
 const panes = [
-  { menuItem: 'phVID', render: () => <Tab.Pane> <Phvid/> </Tab.Pane> },
+//   { menuItem: 'phVID', render: () => <Tab.Pane> <Phvid/> </Tab.Pane> },
   { menuItem: 'skincare', render: () => <Tab.Pane><Skincare/></Tab.Pane> },
-  { menuItem: 'e-VENT', render: () => <Tab.Pane><Event/></Tab.Pane> },
+  { menuItem: 'event', render: () => <Tab.Pane><Event/></Tab.Pane> },
   { menuItem: 'clocks', render: () => <Tab.Pane> <Clocks/></Tab.Pane> },
   { menuItem: 'Social', render: () => <Tab.Pane><Social/></Tab.Pane> },
+  { menuItem: 'e_VENT', render: () => <Tab.Pane><EventMobile/></Tab.Pane> },
 ]
 
 const ProjectPage = () => (

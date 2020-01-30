@@ -30,7 +30,7 @@ const pages=[
     },
 ];
 
-const title = 'E-vent';
+const title = 'Event';
 
 const summary = "This is a react app which allow users to plan their events and share it with other users. I utilizes google api to share events location.";
 
