@@ -16,10 +16,10 @@ const pages=[
         img: 'https://firebasestorage.googleapis.com/v0/b/fir-site-3277b.appspot.com/o/map.png?alt=media&token=8cb9a08f-b972-4b50-8be9-ffb3746d47ee',
         name: 'Map'
     },
-    {
-        img: 'https://firebasestorage.googleapis.com/v0/b/fir-site-3277b.appspot.com/o/public.png?alt=media&token=7463a2c7-0bde-4e07-a474-129ff4d09e45',
-        name: 'Public'
-    },
+    // {
+    //     img: 'https://firebasestorage.googleapis.com/v0/b/fir-site-3277b.appspot.com/o/public.png?alt=media&token=7463a2c7-0bde-4e07-a474-129ff4d09e45',
+    //     name: 'Public'
+    // },
     {
         img: 'https://firebasestorage.googleapis.com/v0/b/fir-site-3277b.appspot.com/o/settings.png?alt=media&token=4e67e3c9-1f33-4b87-ade3-3f6f895160b2',
         name: 'Settings'

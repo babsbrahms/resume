@@ -39,11 +39,11 @@ class HomePage extends Component {
 
     componentDidMount() {
         
-        this.slideshow(this.props.projects)
+        //this.slideshow(this.props.projects)
     }
   
     componentWillUnmount(){
-        clearInterval(this.timer)
+       // clearInterval(this.timer)
     }
     slideshow = (projects) =>{
         const total = projects.length;
@@ -56,40 +56,45 @@ class HomePage extends Component {
         
     }
     render() {
-        const {project} = this.state
+       // const {project} = this.state
         return (
             <div className='ui segments'>
-            
-                <Segment color='green'>
-                    <span className='right floated'>
-                        <Message floating compact> 
-                            <Message.Content>
-                                <p>Welcome to my website</p>
-                            </Message.Content>
-                        
-                        </Message>
-                    </span>
-                   
-                </Segment>
-            
                 <Segment stacked>
-                    
-                    <Card centered>
-                        <Card.Content>
-                            {project &&project.imageUrl &&  
-                            (<img src={project.imageUrl} alt="not available" className='ui image'/>)}
-                            <Card.Header>
-                                {project.name}
-                            </Card.Header>
-                            <Card.Description>
-                                {project.description}
-                            </Card.Description>
-                            <Card.Meta>
-                                {project.language}
-                            </Card.Meta>
-                        </Card.Content>
-                    </Card>
-                                  
+                    {/* <Card.Group centered>
+                        <Card>
+                            <Card.Content>
+                                {project &&project.imageUrl &&  
+                                (<img src={project.imageUrl} alt="not available" className='ui image'/>)}
+                                <Card.Header>
+                                    {project.name}
+                                </Card.Header>
+                                <Card.Description>
+                                    {project.description}
+                                </Card.Description>
+                                <Card.Meta>
+                                    {project.language}
+                                </Card.Meta>
+                            </Card.Content>
+                        </Card>
+                    </Card.Group> */}
+                                
+                    <Card.Group centered>
+                        {this.props.projects.map(project =>(<Card>
+                            <Card.Content>
+                                {project &&project.imageUrl &&  
+                                (<img src={project.imageUrl} alt="not available" className='ui image'/>)}
+                                <Card.Header>
+                                    {project.name}
+                                </Card.Header>
+                                <Card.Description>
+                                    {project.description}
+                                </Card.Description>
+                                <Card.Meta>
+                                    {project.language}
+                                </Card.Meta>
+                            </Card.Content>
+                        </Card>))}
+                    </Card.Group>
                 </Segment>
             </div>
         );

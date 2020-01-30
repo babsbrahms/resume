@@ -24,10 +24,10 @@ const pages=[
         img: 'https://firebasestorage.googleapis.com/v0/b/fir-site-3277b.appspot.com/o/Screenshot%20(26).png?alt=media&token=04c1e2ec-f00c-4504-9881-11fd49744978',
         name: 'Notification Page'
     },
-    {
-        img: 'https://firebasestorage.googleapis.com/v0/b/fir-site-3277b.appspot.com/o/Screenshot%20(27).png?alt=media&token=69f5b9e1-59f9-4c9a-aac3-7cea6c912d70',
-        name: 'Profile page'
-    },
+    // {
+    //     img: 'https://firebasestorage.googleapis.com/v0/b/fir-site-3277b.appspot.com/o/Screenshot%20(27).png?alt=media&token=69f5b9e1-59f9-4c9a-aac3-7cea6c912d70',
+    //     name: 'Profile page'
+    // },
 ];
 
 const title = 'Event';

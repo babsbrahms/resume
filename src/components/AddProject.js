@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Segment, Header, Divider, Card, Image} from 'semantic-ui-react';
+import {Segment, Header, Divider, Card, Image, Icon} from 'semantic-ui-react';
 import PropTypes from 'prop-types';
 import './css/style.css';
 
@@ -47,38 +47,38 @@ class AddProject extends Component {
 
     render() {
         const { large, currentPage, pageCount } = this.state;
-        const {pages, summary,title, enlarge } = this.props;
+        const {pages, summary,title, enlarge, link } = this.props;
         return (
         <div>
             <Segment>
                 <Header>
-                    <Header.Content>
-                        <Header.Subheader>
-                            {title}
-                        </Header.Subheader>
+                    <Header.Content as='h2'>
+                            {title}                   
                     </Header.Content>
                 </Header>
+                {!!link && <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }}><a target='_blank' href={link}>website</a></div>}
             </Segment>
             <Segment>
-                <em> summary</em>
+                <b>summary</b>
                 <p>
                     {summary}
                 </p>
                 <Divider/>
                 <div className='ui link cards'>
-                    {!large && pages.map((page, index)=>
-                        <Card raised key={index.toString()} color='red'>  
-                            <Image src={page.img} alt="not available" />
-                            <Card.Content>
-                                <Card.Description>
-                                    {enlarge && <a onClick={() => this.pressBtn(index, pages)} style={{ color: 'blue'}}>{page.name}</a>}
-                                    {!enlarge && page.name}
-                                    
-                                </Card.Description>
-                            </Card.Content>
-                        </Card>    
-                    )}
-                
+                    <Card.Group stackable itemsPerRow={2} centered>
+                        {!large && pages.map((page, index)=>
+                            <Card raised key={index.toString()} color='red'>  
+                                <Image src={page.img} alt="not available" />
+                                <Card.Content>
+                                    <Card.Description>
+                                        {enlarge && <a onClick={() => this.pressBtn(index, pages)} style={{ color: 'blue'}}>{page.name}</a>}
+                                        {!enlarge && page.name}
+                                        
+                                    </Card.Description>
+                                </Card.Content>
+                            </Card>    
+                        )}
+                    </Card.Group>                
                 </div>
             </Segment>
             {large && 
@@ -90,7 +90,7 @@ class AddProject extends Component {
                                 <h2 className="pop-header-text">{pages[currentPage].name}</h2>
                             </div>
                             <div className="pop-header-right">
-                                <a className="pop-header-text pop-header-text-right" role={'link'} onClick={() => this.setState({ large: false, currentPage: undefined })}> &times;</a>
+                                <a className="pop-header-text pop-header-text-right" role={'link'} onClick={() => this.setState({ large: false, currentPage: undefined })}><Icon inverted color='black' name='close'/></a>
                             </div>
                         </div>
 
@@ -99,13 +99,13 @@ class AddProject extends Component {
                                 <Segment>
                                     <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'flex-start'}}>
                                         <div>
-                                            {(currentPage !== 0 ) && <b><a className="pop-header-text-right" onClick={() => this.removePage()}>Back</a></b>}
-                                            {(currentPage === 0 ) && <b><a style={{ color: '#ffffff'}}>Back</a></b>}  
+                                            {(currentPage !== 0 ) && <b><a className="pop-header-text-right" onClick={() => this.removePage()}><Icon inverted size='big' color='red' name='arrow alternate circle left' /></a></b>}
+                                            {(currentPage === 0 ) && <b><a style={{ color: '#ffffff'}}><Icon disabled inverted size='big' color='red' name='arrow alternate circle left' /></a></b>}  
                                         </div>
                                         
                                         <div>
-                                            {(currentPage !== (pageCount - 1) ) &&<b><a className="pop-header-text-right" onClick={() => this.addPage()}>Next</a></b>}
-                                            {(currentPage === (pageCount - 1) ) &&<b><a style={{ color: '#ffffff'}}>Next</a></b>}
+                                            {(currentPage !== (pageCount - 1) ) &&<b><a className="pop-header-text-right" onClick={() => this.addPage()}><Icon inverted size='big' color='red' name='arrow alternate circle right' /></a></b>}
+                                            {(currentPage === (pageCount - 1) ) &&<b><a style={{ color: '#ffffff'}}><Icon disabled inverted size='big' color='red' name='arrow alternate circle right' /></a></b>}
                                         </div>
                                         
                                     </div>

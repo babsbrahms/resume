@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import {Segment, Message, Card, } from 'semantic-ui-react';
+import {Segment, Message, Card, Icon, Divider } from 'semantic-ui-react';
 
 class ContactPage extends Component {
     state = {  }
     render() {
         return (
-            <div className='ui piled raised green segment'>
-                <Segment inverted color='grey'>
+            <div className='ui raised segment'>
+                <Segment color='red'>
                     <Message size='small' compact >
                         
                         <Message.Content>
@@ -19,13 +19,16 @@ class ContactPage extends Component {
                 </Message>
                </Segment>
                 <Segment stacked>
+                    <Card.Group itemsPerRow='2'>
                         <Card>
                             <Card.Content>
                                 <Card.Header>
+                                    <Icon name='phone'/>
                                     Mobile
                                 </Card.Header>
+                                <Divider />
                                 <Card.Description>
-                                    +2348142319913
+                                    <a target='_blank' href='tel:+2348142319913'>+2348142319913</a>
                                 </Card.Description>
                             </Card.Content>
                         </Card>
@@ -34,13 +37,17 @@ class ContactPage extends Component {
                          <Card>
                             <Card.Content>
                                 <Card.Header>
+                                    <Icon name='mail'/>
                                     E-mail
                                 </Card.Header>
+                                <Divider />
                                 <Card.Description>
-                                    yeancahbrahms7@gmail.com
+                                    <a target='_blank' href='mailto:yeancahbrahms7@gmail.com'>yeancahbrahms7@gmail.com</a>
+                                    
                                 </Card.Description>
                             </Card.Content>
                         </Card>
+                    </Card.Group>
                 </Segment>
             </div>
         );

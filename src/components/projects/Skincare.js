@@ -4,10 +4,10 @@ import AddProject from "../AddProject"
 
 
 const pages=[
-    {
-        img: 'https://firebasestorage.googleapis.com/v0/b/fir-site-3277b.appspot.com/o/Screenshot%20(8).png?alt=media&token=da32216a-0941-4280-b589-ffefa50576dd',
-        name: 'Home Page'
-    },
+    // {
+    //     img: 'https://firebasestorage.googleapis.com/v0/b/fir-site-3277b.appspot.com/o/Screenshot%20(8).png?alt=media&token=da32216a-0941-4280-b589-ffefa50576dd',
+    //     name: 'Home Page'
+    // },
     {
         img: 'https://firebasestorage.googleapis.com/v0/b/fir-site-3277b.appspot.com/o/Screenshot%20(16).png?alt=media&token=bb021b52-31b3-456b-9ca4-37f607312c5a',
         name: 'Shop'
@@ -24,14 +24,14 @@ const pages=[
         img: 'https://firebasestorage.googleapis.com/v0/b/fir-site-3277b.appspot.com/o/Screenshot%20(37).png?alt=media&token=e8261400-7328-47e9-a04d-46e0c87eef32',
         name: 'Checkout'
     },
-    {
-        img: 'https://firebasestorage.googleapis.com/v0/b/fir-site-3277b.appspot.com/o/Screenshot%20(38).png?alt=media&token=8fb561b9-0dd5-4c59-b4b9-d3e354d93eb0',
-        name: 'Profile 1'
-    },
-    {
-        img: 'https://firebasestorage.googleapis.com/v0/b/fir-site-3277b.appspot.com/o/Screenshot%20(39).png?alt=media&token=8021ec8f-21cb-451a-bb3b-8cbb3ce696b4',
-        name: 'Profile 2'
-    },
+    // {
+    //     img: 'https://firebasestorage.googleapis.com/v0/b/fir-site-3277b.appspot.com/o/Screenshot%20(38).png?alt=media&token=8fb561b9-0dd5-4c59-b4b9-d3e354d93eb0',
+    //     name: 'Profile 1'
+    // },
+    // {
+    //     img: 'https://firebasestorage.googleapis.com/v0/b/fir-site-3277b.appspot.com/o/Screenshot%20(39).png?alt=media&token=8021ec8f-21cb-451a-bb3b-8cbb3ce696b4',
+    //     name: 'Profile 2'
+    // },
     {
         img: 'https://firebasestorage.googleapis.com/v0/b/fir-site-3277b.appspot.com/o/Screenshot%20(9).png?alt=media&token=d44c114e-2e4b-4125-8cf5-b16ca728980d',
         name: 'CMS'
@@ -45,18 +45,18 @@ const pages=[
         img: 'https://firebasestorage.googleapis.com/v0/b/fir-site-3277b.appspot.com/o/Screenshot%20(14).png?alt=media&token=c805ef70-bdb7-4e0e-a1e0-3acd5703b7e5',
         name: 'Order'
     },
-    {
-        img: 'https://firebasestorage.googleapis.com/v0/b/fir-site-3277b.appspot.com/o/Screenshot%20(19).png?alt=media&token=e45b1874-eba0-4688-87a3-e89527f5ef8f',
-        name: 'Blog'
-    },
-    {
-        img: 'https://firebasestorage.googleapis.com/v0/b/fir-site-3277b.appspot.com/o/Screenshot%20(20).png?alt=media&token=a2a876a6-f5c3-4a25-b48d-f647f5be7c53',
-        name: 'Blog content'
-    },
-    {
-        img: 'https://firebasestorage.googleapis.com/v0/b/fir-site-3277b.appspot.com/o/Screenshot%20(21).png?alt=media&token=730de675-9502-4e40-ba49-817cf07d4f2d',
-        name: 'Blog image and video slide'
-    },
+    // {
+    //     img: 'https://firebasestorage.googleapis.com/v0/b/fir-site-3277b.appspot.com/o/Screenshot%20(19).png?alt=media&token=e45b1874-eba0-4688-87a3-e89527f5ef8f',
+    //     name: 'Blog'
+    // },
+    // {
+    //     img: 'https://firebasestorage.googleapis.com/v0/b/fir-site-3277b.appspot.com/o/Screenshot%20(20).png?alt=media&token=a2a876a6-f5c3-4a25-b48d-f647f5be7c53',
+    //     name: 'Blog content'
+    // },
+    // {
+    //     img: 'https://firebasestorage.googleapis.com/v0/b/fir-site-3277b.appspot.com/o/Screenshot%20(21).png?alt=media&token=730de675-9502-4e40-ba49-817cf07d4f2d',
+    //     name: 'Blog image and video slide'
+    // },
 ]
 
 

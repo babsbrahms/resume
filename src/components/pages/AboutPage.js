@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Segment, Message, List, Item} from 'semantic-ui-react';
+import {Segment, Message, List, Item, Icon, Progress } from 'semantic-ui-react';
 import profile from '../images/profile.jpg';
 
 const items = [
@@ -17,9 +17,13 @@ class AboutPage extends Component {
         profileImage: '../images/profile.jpg'
      }
     render() {
+        const h1 = 500
+        const h2 = 250
+        const color = '#ffff99';
+
         return (
-            <div className='ui piled raised green segment'>
-                <Segment inverted color='grey'>
+            <div id='about' className='ui raised segment'>
+                <Segment color='red'>
                     <Message compact>
                         <Message.Content>
                             <Message.Header>About Me </Message.Header>
@@ -28,26 +32,60 @@ class AboutPage extends Component {
                     </Message>
                 </Segment>
                 <Segment>
-
-                     <Item.Group items={items} />
+                    <div style={{ width: '100%', height: 'auto' }}>
+                        <div style={{ width: '100%', height: '100%', borderWidth: 1, borderColor: color,borderStyle: 'solid', backgroundColor: color, borderBottomRightRadius: h1 }}>
+                           
+                            {/* <img src={profile} style={{ width: h2, height: h2, borderStyle: 'solid', borderWidth: 1, borderColor: color, backgroundColor: color, borderRadius: (h1/2)}}/> */}
+                            <div style={{ width: '95%', height: 'auto'}}>
+                                <Item.Group items={items} />
+                            </div>
+                        </div>
+                    </div>
+                     
 
                 </Segment>
                 <Segment>
                     <List link>
                         <List.Header as='h3'>Skills</List.Header>
-                        <List.Item>HTML</List.Item>
-                        <List.Item>CSS</List.Item>
-                        <List.Item>JavaScript</List.Item>
-                        <List.Item>React</List.Item>
-                        <List.Item>React-Native</List.Item>
-                        <List.Item>Object Oriented Programming</List.Item>
-                        <List.Item>MongoDB</List.Item>
-                        <List.Item>Firebase</List.Item>
-                        <List.Item>Twitter bootstrap</List.Item>
-                        <List.Item>Semantic UI</List.Item>
-                        <List.Item>Linus Commands</List.Item>
-                        <List.Item>Unit testing with jest</List.Item>
-                        <List.Item>Python</List.Item>
+                        <List.Item>HTML
+                        <Progress size='small' color='yellow' progress percent={90} />
+                        </List.Item>
+                        <List.Item>CSS
+                        <Progress size='small' color='yellow' progress  percent={80} />
+                        </List.Item>
+                        <List.Item>JavaScript
+                        <Progress size='small' color='yellow' progress  percent={85} />
+                        </List.Item>
+                        <List.Item>React
+                        <Progress size='small' color='yellow' progress  percent={90} />
+                        </List.Item>
+                        <List.Item>React-Native 
+                        <Progress size='small' color='yellow' progress  percent={90} />
+                        </List.Item>
+                        <List.Item>Object Oriented Programming
+                        <Progress size='small' color='yellow' progress  percent={82} />
+                        </List.Item>
+                        <List.Item>MongoDB 
+                        <Progress size='small' color='yellow' progress  percent={77} />
+                        </List.Item>
+                        <List.Item>Firebase
+                        <Progress size='small' color='yellow' progress  percent={75} />
+                        </List.Item>
+                        <List.Item>Bootstrap
+                        <Progress size='small' color='yellow' progress  percent={65} />
+                        </List.Item>
+                        <List.Item>Semantic UI
+                        <Progress size='small' color='yellow' progress  percent={80} />
+                        </List.Item>
+                        <List.Item>Linus Commands
+                        <Progress size='small' color='yellow' progress  percent={60} />
+                        </List.Item>
+                        <List.Item>SQL
+                        <Progress size='small' color='yellow' progress  percent={70} />
+                        </List.Item>
+                        <List.Item>Wordpress
+                        <Progress size='small' color='yellow' progress  percent={70} />
+                        </List.Item>
                         
 
                     </List>
