@@ -19,7 +19,7 @@ class ContactPage extends Component {
                 </Message>
                </Segment>
                 <Segment stacked>
-                    <Card.Group itemsPerRow='2'>
+                    <Card.Group itemsPerRow='2' stackable>
                         <Card>
                             <Card.Content>
                                 <Card.Header>
@@ -28,7 +28,7 @@ class ContactPage extends Component {
                                 </Card.Header>
                                 <Divider />
                                 <Card.Description>
-                                    <a target='_blank' href='tel:+2348142319913'>+2348142319913</a>
+                                    <a target='_blank' rel="noopener noreferrer" href='tel:+2348142319913'>+2348142319913</a>
                                 </Card.Description>
                             </Card.Content>
                         </Card>
@@ -42,7 +42,7 @@ class ContactPage extends Component {
                                 </Card.Header>
                                 <Divider />
                                 <Card.Description>
-                                    <a target='_blank' href='mailto:yeancahbrahms7@gmail.com'>yeancahbrahms7@gmail.com</a>
+                                    <a target='_blank' rel="noopener noreferrer" href='mailto:yeancahbrahms7@gmail.com'>yeancahbrahms7@gmail.com</a>
                                     
                                 </Card.Description>
                             </Card.Content>

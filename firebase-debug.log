@@ -1,0 +1,49 @@
+[debug] [2020-01-30T17:57:34.917Z] ----------------------------------------------------------------------
+[debug] [2020-01-30T17:57:34.919Z] Command:       /usr/local/bin/node /usr/local/bin/firebase init
+[debug] [2020-01-30T17:57:34.919Z] CLI Version:   7.6.0
+[debug] [2020-01-30T17:57:34.919Z] Platform:      darwin
+[debug] [2020-01-30T17:57:34.919Z] Node Version:  v10.14.2
+[debug] [2020-01-30T17:57:34.920Z] Time:          Thu Jan 30 2020 18:57:34 GMT+0100 (West Africa Standard Time)
+[debug] [2020-01-30T17:57:34.920Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2020-01-30T17:57:34.929Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-01-30T17:57:34.930Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/vanbrahms/Documents/firebase-site
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2020-01-30T17:57:47.853Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-01-30T17:57:47.854Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-01-30T17:59:09.515Z] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2020-01-30T17:59:09.518Z] FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+    at Object.<anonymous> (/usr/local/lib/node_modules/firebase-tools/lib/auth.js:23:32)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (/usr/local/lib/node_modules/firebase-tools/lib/commands/login.js:8:12)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+[error] 
+[error] Error: Failed to list Firebase projects. See firebase-debug.log for more info.

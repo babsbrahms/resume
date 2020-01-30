@@ -13,13 +13,14 @@ class TopHeader extends Component {
         this.ul.style.display = 'none' 
     }
     render() {
+        const { about, projects, contact } = this.props;
         return (
             <div className='header'>
                 
-                <h2 className='text' style={{marginTop: 25}}><Link className='link' to='/'>Home </Link></h2>
-                <h2 className='text'><Link className='link' to='#about'>About</Link></h2>
-                <h2 className='text'><Link  className='link' to='/projects'>Projects </Link></h2>     
-                <h2 className='text' style={{marginBottom: 14}} ><Link className='link' to='/contact'> Contact </Link></h2>
+                <h2 className='text' style={{marginTop: 25}}><a className='link'>Home </a></h2>
+                <h2 className='text'><a className='link' onClick={() => about()}>About</a></h2>
+                <h2 className='text'><a className='link' onClick={() => projects()}>Projects </a></h2>     
+                <h2 className='text' style={{marginBottom: 14}} ><a className='link' onClick={() => contact()}> Contact </a></h2>
             
                
             </div>

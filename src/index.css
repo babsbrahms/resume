@@ -18,3 +18,10 @@ body{
     overflow-x: hidden; 
 
 }
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #ff6666;
+}

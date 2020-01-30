@@ -64,10 +64,10 @@ class AddProject extends Component {
                     {summary}
                 </p>
                 <Divider/>
-                <div className='ui link cards'>
+                <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center'}} className='ui link cards'>
                     <Card.Group stackable itemsPerRow={2} centered>
                         {!large && pages.map((page, index)=>
-                            <Card raised key={index.toString()} color='red'>  
+                            <Card fluid raised key={index.toString()} color='red'>  
                                 <Image src={page.img} alt="not available" />
                                 <Card.Content>
                                     <Card.Description>

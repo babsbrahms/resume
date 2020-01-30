@@ -27,14 +27,14 @@ class ProjectPage extends Component {
                             <Message.Header>
                                 Projects
                             </Message.Header>
-                            <p>Below are sumarries and few images of my previous projects</p>
+                            <p>Below are sumaries and few images of my previous projects</p>
                         </Message.Content>
                     
                     </Message>
                     
                 </Segment>
-        
-                <Icon name='list alternate outline' size='big' color='red' onClick={() => this.setState({ visible: true })}/>
+                <h3>Toggle Projects <Icon name='list alternate outline' size='big' color='red' onClick={() => this.setState({ visible: true })}/></h3>
+                
         
                 <Sidebar.Pushable as={Segment}>
                     <Sidebar
@@ -46,11 +46,10 @@ class ProjectPage extends Component {
                         visible={visible}
                         width='thin'
                     >
-                        <Menu.Item as='h2'><Icon color='red' name='mobile' onClick={() => this.setState({ current: 'PrepVENT Invite', visible: false })}/>PrepVENT Invite</Menu.Item> 
-                        <Menu.Item as='h2'><Icon color='red' name='desktop' onClick={() => this.setState({ current: 'skincare', visible: false })}/>Skincare</Menu.Item>
-                        <Menu.Item as='h2'><Icon color='red' name='desktop' onClick={() => this.setState({ current: 'event', visible: false })}/>event</Menu.Item>
-                        {/* <Menu.Item as='h2'><Icon color='red' name='mobile' onClick={() => this.setState({ current: 'clocks', visible: false })}/>clocks</Menu.Item>*/}
-                        <Menu.Item as='h2'><Icon color='red' name='mobile' onClick={() => this.setState({ current: 'e_VENT', visible: false })}/>e_VENT</Menu.Item>
+                        <Menu.Item as='h2' onClick={() => this.setState({ current: 'PrepVENT Invite', visible: false })}><Icon color='red' name='mobile' />PrepVENT Invite</Menu.Item> 
+                        <Menu.Item as='h2' onClick={() => this.setState({ current: 'skincare', visible: false })}><Icon color='red' name='desktop' />Skincare</Menu.Item>
+                        <Menu.Item as='h2' onClick={() => this.setState({ current: 'event', visible: false })}><Icon color='red' name='desktop'/>event</Menu.Item>
+                        <Menu.Item as='h2' onClick={() => this.setState({ current: 'e_VENT', visible: false })}><Icon color='red' name='mobile' />e_VENT</Menu.Item>
                     </Sidebar>
         
                     <Sidebar.Pusher dimmed={visible}>
@@ -63,8 +62,7 @@ class ProjectPage extends Component {
                         </Segment>
                     </Sidebar.Pusher>
                 </Sidebar.Pushable>
-                <Icon name='list alternate outline' size='big' color='red' onClick={() => this.setState({ visible: true })}/>
-
+                <h3>Toggle Projects <Icon name='list alternate outline' size='big' color='red' onClick={() => this.setState({ visible: true })}/></h3>
             </div>
         )
     }

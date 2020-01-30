@@ -79,7 +79,7 @@ class HomePage extends Component {
                     </Card.Group> */}
                                 
                     <Card.Group centered>
-                        {this.props.projects.map(project =>(<Card>
+                        {this.props.projects.map(project =>(<Card centered>
                             <Card.Content>
                                 {project &&project.imageUrl &&  
                                 (<img src={project.imageUrl} alt="not available" className='ui image'/>)}

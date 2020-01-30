@@ -1,5 +1,5 @@
 import React from 'react';
-import {Segment, Divider} from 'semantic-ui-react';
+import {Segment, Divider, Header} from 'semantic-ui-react';
 import AddProject from "../AddProject"
 
 
@@ -67,6 +67,18 @@ const summary = "I made this app / web site for my sister's store. The app has a
 const Skincare = () => (
     <div>
         <AddProject title={title} summary={summary} pages={pages} enlarge />
+        <Segment>
+            <Header>
+                <Header.Content>
+                    Other e-commerce website with include
+                </Header.Content>
+            </Header>
+            <ol>
+                <li><a target='_blank' rel="noopener noreferrer" href='http://www.baz.com.ng/'>Baz</a> </li>
+                <li><a target='_blank' rel="noopener noreferrer" href='http://homemadeconnect.herokuapp.com/'>18|35</a></li>     
+            </ol>
+
+        </Segment>
         <Segment>
         <em>some technologies and packages used</em>
         <ul>

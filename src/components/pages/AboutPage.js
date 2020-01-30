@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Segment, Message, List, Item, Icon, Progress } from 'semantic-ui-react';
+import {Segment, Message, List, Item, Icon, Progress, Header, Card, Grid, Divider } from 'semantic-ui-react';
 import profile from '../images/profile.jpg';
 
 const items = [
@@ -34,7 +34,9 @@ class AboutPage extends Component {
                 <Segment>
                     <div style={{ width: '100%', height: 'auto' }}>
                         <div style={{ width: '100%', height: '100%', borderWidth: 1, borderColor: color,borderStyle: 'solid', backgroundColor: color, borderBottomRightRadius: h1 }}>
-                           
+                            <Header as='h2' color='black'>
+                                <Header.Content>Ibrahim Olayinka Babatunde</Header.Content>
+                            </Header>
                             {/* <img src={profile} style={{ width: h2, height: h2, borderStyle: 'solid', borderWidth: 1, borderColor: color, backgroundColor: color, borderRadius: (h1/2)}}/> */}
                             <div style={{ width: '95%', height: 'auto'}}>
                                 <Item.Group items={items} />
@@ -68,11 +70,20 @@ class AboutPage extends Component {
                         <List.Item>MongoDB 
                         <Progress size='small' color='yellow' progress  percent={77} />
                         </List.Item>
+                        <List.Item>SQL
+                        <Progress size='small' color='yellow' progress  percent={70} />
+                        </List.Item>
+                        <List.Item>Node JS
+                        <Progress size='small' color='yellow' progress  percent={75} />
+                        </List.Item>
                         <List.Item>Firebase
                         <Progress size='small' color='yellow' progress  percent={75} />
                         </List.Item>
+                        <List.Item>Wordpress
+                        <Progress size='small' color='yellow' progress  percent={70} />
+                        </List.Item>
                         <List.Item>Bootstrap
-                        <Progress size='small' color='yellow' progress  percent={65} />
+                        <Progress size='small' color='yellow' progress  percent={70} />
                         </List.Item>
                         <List.Item>Semantic UI
                         <Progress size='small' color='yellow' progress  percent={80} />
@@ -80,15 +91,73 @@ class AboutPage extends Component {
                         <List.Item>Linus Commands
                         <Progress size='small' color='yellow' progress  percent={60} />
                         </List.Item>
-                        <List.Item>SQL
-                        <Progress size='small' color='yellow' progress  percent={70} />
-                        </List.Item>
-                        <List.Item>Wordpress
-                        <Progress size='small' color='yellow' progress  percent={70} />
-                        </List.Item>
                         
 
                     </List>
+                </Segment>
+                <Segment>
+                    <Grid columns='2' stackable>
+                        <Grid.Column>
+                            <Card fluid>
+                                <Card.Header as='h3'>Education</Card.Header>
+                                <Card.Content>
+
+                                    American University of sharjah
+                                    <Card.Description>
+                                    B.S.C Chemical Engineering
+                                    </Card.Description>
+                                    <Card.Description>
+                                    G.P.A: 2.51/4
+                                    </Card.Description>
+                                    <Card.Meta>
+                                        2012-2017
+                                    </Card.Meta>
+                                </Card.Content>
+                            </Card>
+                        </Grid.Column>
+
+                        <Grid.Column>
+                            <Card fluid>
+                                <Card.Header as='h3'>Experience</Card.Header>
+                                <Card.Content>
+                                    Membersdrive (now Mev)
+                                    <Card.Description>
+                                    I was was a front-end Engineer at Membersdrive.
+                                    </Card.Description>
+                                    <Card.Description>
+                                    Tools: React, Adobe-Illustrator.
+                                    </Card.Description>
+                                    <Card.Meta>
+                                        2017-2019
+                                    </Card.Meta>
+                                    <Divider />
+                                    PrepVENT
+                                    <Card.Description>
+                                    I work as full-stack engineer at PrepVENT. 
+                                    </Card.Description>
+                                    <Card.Description>
+                                    Tools: React, React-Native, Firebase, Node JS.
+                                    </Card.Description>
+                                    <Card.Meta>
+                                        2019-2019
+                                    </Card.Meta>
+                                    <Divider />
+                                    Nation Youth Service Corp
+                                    <Card.Description>
+                                        I work at the National Automotive Design And Development Council
+                                    </Card.Description>
+                                    <Card.Meta>
+                                        2019-2020
+                                    </Card.Meta>
+                                </Card.Content>
+                            </Card>
+                        </Grid.Column>
+                    </Grid>
+
+
+                    <Card.Group>
+   
+                    </Card.Group>
                 </Segment>
             </div>
         );
