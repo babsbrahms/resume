@@ -1,86 +1,33 @@
-[debug] [2020-01-30T19:39:29.112Z] ----------------------------------------------------------------------
-[debug] [2020-01-30T19:39:29.117Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
-[debug] [2020-01-30T19:39:29.118Z] CLI Version:   7.6.0
-[debug] [2020-01-30T19:39:29.118Z] Platform:      darwin
-[debug] [2020-01-30T19:39:29.118Z] Node Version:  v10.14.2
-[debug] [2020-01-30T19:39:29.119Z] Time:          Thu Jan 30 2020 20:39:29 GMT+0100 (West Africa Standard Time)
-[debug] [2020-01-30T19:39:29.119Z] ----------------------------------------------------------------------
+[debug] [2020-03-19T09:31:09.684Z] ----------------------------------------------------------------------
+[debug] [2020-03-19T09:31:09.687Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2020-03-19T09:31:09.687Z] CLI Version:   7.6.0
+[debug] [2020-03-19T09:31:09.687Z] Platform:      darwin
+[debug] [2020-03-19T09:31:09.687Z] Node Version:  v10.14.2
+[debug] [2020-03-19T09:31:09.717Z] Time:          Thu Mar 19 2020 10:31:09 GMT+0100 (West Africa Standard Time)
+[debug] [2020-03-19T09:31:09.717Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2020-01-30T19:39:29.135Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2020-01-30T19:39:29.135Z] > authorizing via signed-in user
-[debug] [2020-01-30T19:39:29.136Z] [iam] checking project ib-resume for permissions ["firebase.projects.get","firebasehosting.sites.update"]
-[debug] [2020-01-30T19:39:29.139Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
-[debug] [2020-01-30T19:39:29.139Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
- <request body omitted>
-[debug] [2020-01-30T19:39:30.203Z] <<< HTTP RESPONSE 200
-[debug] [2020-01-30T19:39:30.565Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/ib-resume:testIamPermissions  
+[debug] [2020-03-19T09:31:09.789Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-03-19T09:31:09.790Z] > authorizing via signed-in user
+[debug] [2020-03-19T09:31:09.790Z] [iam] checking project ib-resume for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-03-19T09:31:09.793Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/ib-resume:testIamPermissions  
 
-[debug] [2020-01-30T19:39:32.822Z] <<< HTTP RESPONSE 200
-[debug] [2020-01-30T19:39:32.824Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/ib-resume  
+[debug] [2020-03-19T09:31:12.176Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-19T09:31:12.179Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/ib-resume  
  
-[debug] [2020-01-30T19:39:48.494Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-19T09:31:13.115Z] <<< HTTP RESPONSE 200
 [info] 
 [info] === Deploying to 'ib-resume'...
 [info] 
 [info] i  deploying hosting
-[debug] [2020-01-30T19:39:48.503Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/ib-resume/versions  
+[debug] [2020-03-19T09:31:13.122Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/ib-resume/versions  
 
-[debug] [2020-01-30T19:39:51.744Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-19T09:31:15.669Z] <<< HTTP RESPONSE 200
 [info] i  hosting[ib-resume]: beginning deploy...
 [info] i  hosting[ib-resume]: found 26 files in build
-[debug] [2020-01-30T19:39:52.948Z] [hosting] hash cache [YnVpbGQ] stored for 26 files
-[debug] [2020-01-30T19:39:52.949Z] [hosting][hash queue][FINAL]
-[debug] [2020-01-30T19:39:52.949Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/ib-resume/versions/709c6828eb6a929f:populateFiles  
+[debug] [2020-03-19T09:31:16.433Z] [hosting] hash cache [YnVpbGQ] stored for 26 files
+[debug] [2020-03-19T09:31:16.433Z] [hosting][hash queue][FINAL]
+[debug] [2020-03-19T09:31:16.433Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/ib-resume/versions/8b5e35efd2e77e40:populateFiles  
  <request body omitted>
-[debug] [2020-01-30T19:39:58.824Z] <<< HTTP RESPONSE 200
-[debug] [2020-01-30T19:39:58.845Z] [hosting][populate queue][FINAL]
-[debug] [2020-01-30T19:39:58.845Z] [hosting] uploads queued: 26
-[debug] [2020-01-30T19:40:14.205Z] [uploadQueue] Retrying task a0825859997f5887a56207a2df6d072ee278a49e26062bf5fbb9a400502fc90a
-[debug] [2020-01-30T19:40:15.143Z] [uploadQueue] Retrying task 1dcac79feb4ad0118b234828e5dc840ac02e5bd55ae239cfaa0ddb9ae2415226
-[debug] [2020-01-30T19:40:25.754Z] [uploadQueue] Retrying task a12aa43d192f48f7eda1d0b2f670d647bd3e9c951b1e9a0e3c7f93f25842f8be
-[debug] [2020-01-30T19:40:29.263Z] [uploadQueue] Retrying task e849c46fa616f090fdcdb229f16fc9d2936715078acf18b66a2f05b9b62f91dc
-[debug] [2020-01-30T19:40:29.263Z] [uploadQueue] Retrying task 4693b7b886f057d86919884c9b96a984259821a0137b75c5d5080b62ec6f8702
-[debug] [2020-01-30T19:40:29.264Z] [uploadQueue] Retrying task 431111d973342f701beaea76f65a82de9c76c5129f2aee9bb7eb20e11b8d1405
-[debug] [2020-01-30T19:40:29.264Z] [uploadQueue] Retrying task f8b7bec973edfafd27b1fe4d7f0184288bfc25f10e064092c367fac1f7614593
-[debug] [2020-01-30T19:40:29.270Z] [uploadQueue] Retrying task 14d21ad5f2fddbd49f4a9789fbcb1363521e1d5ee1b85a3cbcc7755703b316ef
-[debug] [2020-01-30T19:40:29.270Z] [uploadQueue] Retrying task 6ec6c5eaeb4f897ff5a0ce0741b98838454a9a3a384ee572627b9b138efb6b69
-[debug] [2020-01-30T19:40:29.272Z] [uploadQueue] Retrying task 5bab60393b5468d22371204d620a7912f54cc28bae7f6a19d777d24084b18f90
-[debug] [2020-01-30T19:40:29.309Z] [uploadQueue] Retrying task ffc7c15bdbc987604433a6e2e94f8aeb9fdd8ef5f12e66ee1446cc00cccdadc3
-[debug] [2020-01-30T19:40:29.310Z] [uploadQueue] Retrying task ea0231284f35e3e8842c1d0f934116421324620f9bd638ad2ac7b337cf6b522a
-[debug] [2020-01-30T19:40:31.113Z] [uploadQueue] Retrying task ddc859401ef676867d40bc1be611b1df2d29c0c8ac55b48865bd4f0f6f93a583
-[debug] [2020-01-30T19:40:31.137Z] [uploadQueue] Retrying task a273abbc7b61349a118224a44d65de7d120a2d0f691cb30a03b1f960ee908eb8
-[debug] [2020-01-30T19:40:31.144Z] [uploadQueue] Retrying task 6c58d156e0204021ae3dffbbcaab2169e1540970a66295b83268ea093853698f
-[debug] [2020-01-30T19:40:32.378Z] [uploadQueue] Retrying task e88a6574e41ed3a7a5f2514c2791057f834e85ae01f7dd83c901afa45c72209d
-[debug] [2020-01-30T19:40:34.657Z] [uploadQueue] Retrying task 31717a384d7c8e3ae4aacff169ecb79de630e00f16d5fc3968191bf52b063084
-[debug] [2020-01-30T19:40:37.179Z] [uploadQueue] Retrying task 1dcac79feb4ad0118b234828e5dc840ac02e5bd55ae239cfaa0ddb9ae2415226
-[debug] [2020-01-30T19:40:37.219Z] [uploadQueue] Retrying task a0825859997f5887a56207a2df6d072ee278a49e26062bf5fbb9a400502fc90a
-[debug] [2020-01-30T19:40:38.656Z] [uploadQueue] Retrying task 05e5f5784e56bea7773875b8fb0723b75f14aa6c7c5417eef53e55dd05a24a9d
-[debug] [2020-01-30T19:40:40.171Z] [uploadQueue] Retrying task a12aa43d192f48f7eda1d0b2f670d647bd3e9c951b1e9a0e3c7f93f25842f8be
-[debug] [2020-01-30T19:40:41.385Z] [uploadQueue] Retrying task 5fde7caeeff326bde2a28ebf47c1dd91e521bf0c76b68a00259dc5e7ca31248a
-[debug] [2020-01-30T19:41:00.074Z] [uploadQueue] Retrying task 4693b7b886f057d86919884c9b96a984259821a0137b75c5d5080b62ec6f8702
-[debug] [2020-01-30T19:41:00.074Z] [uploadQueue] Retrying task f8b7bec973edfafd27b1fe4d7f0184288bfc25f10e064092c367fac1f7614593
-[debug] [2020-01-30T19:41:00.088Z] [uploadQueue] Retrying task 5bab60393b5468d22371204d620a7912f54cc28bae7f6a19d777d24084b18f90
-[debug] [2020-01-30T19:41:00.117Z] [uploadQueue] Retrying task ea0231284f35e3e8842c1d0f934116421324620f9bd638ad2ac7b337cf6b522a
-[debug] [2020-01-30T19:41:00.119Z] [uploadQueue] Retrying task ffc7c15bdbc987604433a6e2e94f8aeb9fdd8ef5f12e66ee1446cc00cccdadc3
-[debug] [2020-01-30T19:41:01.927Z] [uploadQueue] Retrying task ddc859401ef676867d40bc1be611b1df2d29c0c8ac55b48865bd4f0f6f93a583
-[debug] [2020-01-30T19:41:01.947Z] [uploadQueue] Retrying task a273abbc7b61349a118224a44d65de7d120a2d0f691cb30a03b1f960ee908eb8
-[debug] [2020-01-30T19:41:01.976Z] [uploadQueue] Retrying task 6c58d156e0204021ae3dffbbcaab2169e1540970a66295b83268ea093853698f
-[debug] [2020-01-30T19:41:03.185Z] [uploadQueue] Retrying task e88a6574e41ed3a7a5f2514c2791057f834e85ae01f7dd83c901afa45c72209d
-[debug] [2020-01-30T19:41:05.459Z] [uploadQueue] Retrying task 31717a384d7c8e3ae4aacff169ecb79de630e00f16d5fc3968191bf52b063084
-[debug] [2020-01-30T19:41:08.792Z] [uploadQueue] Retrying task 1dcac79feb4ad0118b234828e5dc840ac02e5bd55ae239cfaa0ddb9ae2415226
-[debug] [2020-01-30T19:41:08.828Z] [uploadQueue] Retrying task a0825859997f5887a56207a2df6d072ee278a49e26062bf5fbb9a400502fc90a
-[debug] [2020-01-30T19:41:09.468Z] [uploadQueue] Retrying task 05e5f5784e56bea7773875b8fb0723b75f14aa6c7c5417eef53e55dd05a24a9d
-[debug] [2020-01-30T19:41:11.789Z] [uploadQueue] Retrying task a12aa43d192f48f7eda1d0b2f670d647bd3e9c951b1e9a0e3c7f93f25842f8be
-[debug] [2020-01-30T19:41:29.086Z] [uploadQueue] Retrying task 431111d973342f701beaea76f65a82de9c76c5129f2aee9bb7eb20e11b8d1405
-[debug] [2020-01-30T19:41:29.089Z] [uploadQueue] Retrying task e849c46fa616f090fdcdb229f16fc9d2936715078acf18b66a2f05b9b62f91dc
-[debug] [2020-01-30T19:41:30.661Z] [uploadQueue] Retrying task 6ec6c5eaeb4f897ff5a0ce0741b98838454a9a3a384ee572627b9b138efb6b69
-[debug] [2020-01-30T19:41:30.669Z] [uploadQueue] Retrying task 14d21ad5f2fddbd49f4a9789fbcb1363521e1d5ee1b85a3cbcc7755703b316ef
-[debug] [2020-01-30T19:41:31.681Z] [uploadQueue] Retrying task 4693b7b886f057d86919884c9b96a984259821a0137b75c5d5080b62ec6f8702
-[debug] [2020-01-30T19:41:31.682Z] [uploadQueue] Retrying task f8b7bec973edfafd27b1fe4d7f0184288bfc25f10e064092c367fac1f7614593
-[debug] [2020-01-30T19:41:31.698Z] [uploadQueue] Retrying task 5bab60393b5468d22371204d620a7912f54cc28bae7f6a19d777d24084b18f90
-[debug] [2020-01-30T19:41:31.723Z] [uploadQueue] Retrying task ea0231284f35e3e8842c1d0f934116421324620f9bd638ad2ac7b337cf6b522a
-[debug] [2020-01-30T19:41:31.727Z] [uploadQueue] Retrying task ffc7c15bdbc987604433a6e2e94f8aeb9fdd8ef5f12e66ee1446cc00cccdadc3
-[debug] [2020-01-30T19:41:33.537Z] [uploadQueue] Retrying task ddc859401ef676867d40bc1be611b1df2d29c0c8ac55b48865bd4f0f6f93a583
-[debug] [2020-01-30T19:41:33.550Z] [uploadQueue] Retrying task a273abbc7b61349a118224a44d65de7d120a2d0f691cb30a03b1f960ee908eb8
-[debug] [2020-01-30T19:41:33.632Z] [uploadQueue] Retrying task 6c58d156e0204021ae3dffbbcaab2169e1540970a66295b83268ea093853698f
-[debug] [2020-01-30T19:41:34.794Z] [uploadQueue] Retrying task e88a6574e41ed3a7a5f2514c2791057f834e85ae01f7dd83c901afa45c72209d
+[debug] [2020-03-19T09:31:19.003Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-19T09:31:19.008Z] [hosting][populate queue][FINAL]
+[debug] [2020-03-19T09:31:19.008Z] [hosting] uploads queued: 5

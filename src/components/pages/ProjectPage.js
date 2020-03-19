@@ -27,7 +27,7 @@ class ProjectPage extends Component {
                             <Message.Header>
                                 Projects
                             </Message.Header>
-                            <p>Below are sumaries and few images of my previous projects</p>
+                            <p>Below are summaries and few images of my previous projects. Toggle projects using the icon below.</p>
                         </Message.Content>
                     
                     </Message>

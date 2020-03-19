@@ -88,7 +88,7 @@ class AboutPage extends Component {
                         <List.Item>Semantic UI
                         <Progress size='small' color='yellow' progress  percent={80} />
                         </List.Item>
-                        <List.Item>Linus Commands
+                        <List.Item>Linux Commands
                         <Progress size='small' color='yellow' progress  percent={60} />
                         </List.Item>
                         
@@ -102,7 +102,7 @@ class AboutPage extends Component {
                                 <Card.Header as='h3'>Education</Card.Header>
                                 <Card.Content>
 
-                                    American University of sharjah
+                                    American University of Sharjah
                                     <Card.Description>
                                     B.S.C Chemical Engineering
                                     </Card.Description>
@@ -142,7 +142,7 @@ class AboutPage extends Component {
                                         2019-2019
                                     </Card.Meta>
                                     <Divider />
-                                    Nation Youth Service Corp
+                                    Nation Youth Service Corp (NYSC)
                                     <Card.Description>
                                         I work at the National Automotive Design And Development Council
                                     </Card.Description>

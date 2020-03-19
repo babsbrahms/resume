@@ -14,7 +14,6 @@ class ContactPage extends Component {
                                 Contact Me
                             </Message.Header>
                             <p>You can contact me using the below information</p>
-                            
                     </Message.Content>
                 </Message>
                </Segment>
