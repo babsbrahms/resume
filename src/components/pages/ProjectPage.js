@@ -1,24 +1,39 @@
 import React, { Component } from 'react'
-import { Header, Icon, Image, Menu, Segment, Sidebar, Message } from 'semantic-ui-react'
+import { Image, Segment, Message, Card, Button } from 'semantic-ui-react'
 
 // import Phvid from '../projects/phvid';
-import Skincare from '../projects/Skincare';
-import Event from '../projects/Event';
-import Clocks from '../projects/Clocks';
-import Social from '../projects/Social';
-import EventMobile from '../projects/EventMobile';
-import Prepvent from '../projects/PrepVENTMobile'
+const projects = [
+    { name: 'PrepVENT Blog', type: 'website', github: 'https://github.com/babsbrahms/prepvent-blog', link: 'https://prepvent-blog.herokuapp.com/login', description: 'PrepVENT blog allows users to post articles on the platform. It has the home page and archives page list all blog posts, category page to list all post post in thesame category, blog page display blog article and cms page to post, edit and delete blog post', technology: "Node JS, Express", poster: 'https://firebasestorage.googleapis.com/v0/b/ib-resume.appspot.com/o/Screenshot_2020-05-22%20PrepVENT%20BLOG%20Home.png?alt=media&token=85cb1943-436c-439c-8b75-90a0377e2052' },
+    { name: 'PrepVENT Check-In', type: 'website', github: 'https://github.com/babsbrahms/prepvent-checkin', link: 'https://prepvent-checkin.herokuapp.com/', description: 'PrepVENT check-In is an app use to check-in event goer to an event. It displays the statistics of people that checked into an event. ', technology: "React", poster: 'https://firebasestorage.googleapis.com/v0/b/ib-resume.appspot.com/o/PrepVENT%20Check_In.png?alt=media&token=08c3ddaf-ddad-495f-ab54-b9505c61374c' },
+    { name: 'Stride Inc. Marketing', type: 'website', github: 'https://github.com/babsbrahms/stride', link: 'https://stride-test.herokuapp.com/contact', description: 'Stride Inc. Marketing is a business website the display the services rendered by a marketing firm. It allows visits to learn about the firm and schedule a consultation with the firm.', technology: "Node JS, Express", poster: 'https://firebasestorage.googleapis.com/v0/b/ib-resume.appspot.com/o/Screenshot_2020-05-22%20Stride%20Inc%20.png?alt=media&token=89c1d104-2ebd-46aa-8dd7-c7f54375ee1b' },
+    { name: '18|35 HOMEMADE', type: 'website', github: '', link: 'http://homemadeconnect.herokuapp.com/', description: '18|35 is an e-commerce website for buying clothing. It has an home page that list product, product page, shopping cart and checkout. It also has an admin page that manage the product on the website.', technology: "Node JS, Express", poster: 'https://firebasestorage.googleapis.com/v0/b/ib-resume.appspot.com/o/Screenshot_2020-05-21%2018%2035%20HOME%20MADE%20FTY.png?alt=media&token=50181fda-7993-4965-91e7-035871841b40' },
+    { name: 'PrepVENT Invite', type: 'mobile app', github: '', link: 'https://vb-prepvent.firebaseapp.com/', description: 'This is a mobile app for creating, editing and sharing invitation letter and event poster. It is available on android play store and ios app store.', technology: "React Native, Firebase", poster: 'https://firebasestorage.googleapis.com/v0/b/ib-resume.appspot.com/o/prepvent_invite_mobile%2F13.png?alt=media&token=f1cada97-0178-4cce-864c-6aff514ecc52' },
+
+]
 
 
 class ProjectPage extends Component { 
-    state = {
-        visible: false,
-        current: 'PrepVENT Invite'
+    constructor (props) {
+        super(props);
+
+        this.state = {
+            visible: false,
+            current: 'PrepVENT Invite',
+            link: ''
+        }
+
+        this.myLink = React.createRef()
     }
+
     setVisible = (val) => this.setState({ visible: val })
 
+    visitPage = link => this.setState({ link }, () => {
+        this.myLink.click()
+    })  
+
+
     render() {
-        const { visible, current } = this.state;
+        const { visible, current, link } = this.state;
         return (
             <div className='ui raised segment'>
                 <Segment color='red'>
@@ -27,42 +42,37 @@ class ProjectPage extends Component {
                             <Message.Header>
                                 Projects
                             </Message.Header>
-                            <p>Below are summaries and few images of my previous projects. Toggle projects using the icon below.</p>
+                            <p>Below are summaries and links of my previous projects.</p>
                         </Message.Content>
-                    
                     </Message>
-                    
+                    <a ref={x => this.myLink = x} style={{ display: 'hidden'}} target={'__blank'} href={link}></a>
                 </Segment>
-                <h3>Toggle Projects <Icon name='list alternate outline' size='big' color='red' onClick={() => this.setState({ visible: true })}/></h3>
-                
-        
-                <Sidebar.Pushable as={Segment}>
-                    <Sidebar
-                        as={Menu}
-                        animation='overlay'
-                        icon='labeled'
-                        onHide={() => this.setVisible(false)}
-                        vertical
-                        visible={visible}
-                        width='thin'
-                    >
-                        <Menu.Item as='h2' onClick={() => this.setState({ current: 'PrepVENT Invite', visible: false })}><Icon color='red' name='mobile' />PrepVENT Invite</Menu.Item> 
-                        <Menu.Item as='h2' onClick={() => this.setState({ current: 'skincare', visible: false })}><Icon color='red' name='desktop' />Skincare</Menu.Item>
-                        <Menu.Item as='h2' onClick={() => this.setState({ current: 'event', visible: false })}><Icon color='red' name='desktop'/>event</Menu.Item>
-                        <Menu.Item as='h2' onClick={() => this.setState({ current: 'e_VENT', visible: false })}><Icon color='red' name='mobile' />e_VENT</Menu.Item>
-                    </Sidebar>
-        
-                    <Sidebar.Pusher dimmed={visible}>
-                        <Segment basic>
-                            { (current === 'PrepVENT Invite') &&  (<div><Prepvent/></div>) }
-                            { (current === 'skincare') &&  (<div><Skincare/></div>) }
-                            { (current === 'event') && ( <div><Event/></div>) }
-                            { (current === 'clocks') &&  (<div> <Clocks/></div>) }
-                            { (current === 'e_VENT') &&  (<div><EventMobile/></div>) }
-                        </Segment>
-                    </Sidebar.Pusher>
-                </Sidebar.Pushable>
-                <h3>Toggle Projects <Icon name='list alternate outline' size='big' color='red' onClick={() => this.setState({ visible: true })}/></h3>
+
+                <Card.Group stackable itemsPerRow={2} centered>
+                    {projects.map((page, index)=>
+                        <Card fluid raised key={index.toString()} color='red'>  
+                            <Image src={page.poster} alt="not available" />
+                            <Card.Content>    
+                                <Card.Header textAlign={'center'}>{page.name}</Card.Header>
+                                <Card.Meta textAlign={'center'}>{page.type}</Card.Meta>
+                                <Card.Description>
+                                    {page.description}
+                                </Card.Description>
+                                <Card.Meta >{page.technology}</Card.Meta>
+                            </Card.Content>
+                            <Card.Content extra>
+                                <Button disabled={!page.link} onClick={() => this.visitPage(page.link)} size="big" fluid basic color='green'>
+                                    Visit {page.type}
+                                </Button>
+                                {(!!page.github) && (
+                                <Button disabled={!page.github} onClick={() => this.visitPage(page.github)} size="big" fluid basic color='blue'>
+                                    Visit Github
+                                </Button>)}
+                            </Card.Content>
+                        </Card>    
+                    )}
+                </Card.Group>  
+
             </div>
         )
     }

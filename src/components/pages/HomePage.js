@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Message, Segment, Card} from "semantic-ui-react";
+import { Segment, Card} from "semantic-ui-react";
 import PropTypes from 'prop-types';
 
 class HomePage extends Component {

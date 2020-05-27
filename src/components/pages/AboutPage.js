@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import {Segment, Message, List, Item, Icon, Progress, Header, Card, Grid, Divider } from 'semantic-ui-react';
+import {Segment, Message, List, Progress, Header, Card, Grid, Divider } from 'semantic-ui-react';
 import profile from '../images/profile.jpg';
-
+//
 const items = [
     {
       childKey: 0,
       image: profile,
       header: 'Biography',
-      description: 'I had an idea to build an app. Therefore, I decided to give it a try, because I knew the basics of HTML from secondary school. During the first trial, I discovered I was not as good as I had thought. This motivated me to challenge myself to learn the basics HTML and CSS. Eventually,I built my app to a certain stage, I really loved it, but it was not as good as I had intended it to be. At that point, i knew I had to upgrade my skills. Luckly for me, I was just done with my university education and I had not secured a job yet. I had enough time on my hands and this made it easy for me to engross my self with the learning and assimilation of my new found love. I started teaching myself how to code with materials from youtube (traversy media, thenewboston e.t.c.), blog posts and web sites (medium, w3schools, Udemy, developer.mozilla.org, stack overflow e.t.c.), pdfs and materials i could get my hands on. Honestly, at the beginning it was not easy because I could not debug my code nor do I know how to code correctly. With perseverance and dedication, I improved over time. I learnt how to debug, write the same code with multiple syntaxes, read official documentations and some much more. I am proud of how far I have come, I challenged myself to teach myself something I love. I know that I am still a work in progress and I am excited to learn more.',
+      description: ' I had an idea to build an app. Therefore, I decided to give it a try, because I knew the basics of HTML from secondary school. During the first trial, I discovered I was not as good as I had thought. This motivated me to challenge myself to learn the basics HTML and CSS. Eventually,I built my app to a certain stage, I really loved it, but it was not as good as I had intended it to be. At that point, i knew I had to upgrade my skills. Luckly for me, I was just done with my university education and I had not secured a job yet. I had enough time on my hands and this made it easy for me to engross my self with the learning and assimilation of my new found love. I started teaching myself how to code with materials from youtube (traversy media, thenewboston e.t.c.), blog posts and web sites (medium, w3schools, Udemy, developer.mozilla.org, stack overflow e.t.c.), pdfs and materials i could get my hands on. Honestly, at the beginning it was not easy because I could not debug my code nor do I know how to code correctly. With perseverance and dedication, I improved over time. I learnt how to debug, write the same code with multiple syntaxes, read official documentations and some much more. I am proud of how far I have come, I challenged myself to teach myself something I love. I know that I am still a work in progress and I am excited to learn more.',
       meta: 'How I started programming',
       extra: 'Still on the path to greatness... Ibrahim Olayinka Babatunde',
     },
@@ -39,7 +39,63 @@ class AboutPage extends Component {
                             </Header>
                             {/* <img src={profile} style={{ width: h2, height: h2, borderStyle: 'solid', borderWidth: 1, borderColor: color, backgroundColor: color, borderRadius: (h1/2)}}/> */}
                             <div style={{ width: '95%', height: 'auto'}}>
-                                <Item.Group items={items} />
+                                {/* <Item.Group items={items} /> */}
+                                <Card.Group>
+                                    <Card>
+                                        <Card.Content>
+                                            <Card.Header>Experience</Card.Header>
+                                            <Card.Description>
+                                                3.5 years
+                                            </Card.Description>
+                                        </Card.Content>
+                                    </Card>
+
+                                    <Card>
+                                        <Card.Content>
+                                            <Card.Header>Language</Card.Header>
+                                            <Card.Description>
+                                                JavaScript
+                                            </Card.Description>
+                                        </Card.Content>
+                                    </Card>
+
+                                    <Card>
+                                        <Card.Content>
+                                            <Card.Header>Platform</Card.Header>
+                                            <Card.Description>
+                                                Web and Mobile
+                                            </Card.Description>
+                                        </Card.Content>
+                                    </Card>
+
+                                    <Card>
+                                        <Card.Content>
+                                            <Card.Header>Specialization</Card.Header>
+                                            <Card.Description>
+                                                Full Stack
+                                            </Card.Description>
+                                        </Card.Content>
+                                    </Card>
+
+                                    <Card>
+                                        <Card.Content>
+                                            <Card.Header>Database</Card.Header>
+                                            <Card.Description>
+                                                MongoDB, MY SQL
+                                            </Card.Description>
+                                        </Card.Content>
+                                    </Card>
+
+                                    <Card>
+                                        <Card.Content>
+                                            <Card.Header>cloud</Card.Header>
+                                            <Card.Description>
+                                                Firebase, Heroku and Digital Ocean
+                                            </Card.Description>
+                                        </Card.Content>
+                                    </Card>
+                                </Card.Group>
+
                             </div>
                         </div>
                     </div>
@@ -56,7 +112,7 @@ class AboutPage extends Component {
                         <Progress size='small' color='yellow' progress  percent={80} />
                         </List.Item>
                         <List.Item>JavaScript
-                        <Progress size='small' color='yellow' progress  percent={85} />
+                        <Progress size='small' color='yellow' progress  percent={90} />
                         </List.Item>
                         <List.Item>React
                         <Progress size='small' color='yellow' progress  percent={90} />
@@ -65,7 +121,7 @@ class AboutPage extends Component {
                         <Progress size='small' color='yellow' progress  percent={90} />
                         </List.Item>
                         <List.Item>Object Oriented Programming
-                        <Progress size='small' color='yellow' progress  percent={82} />
+                        <Progress size='small' color='yellow' progress  percent={87} />
                         </List.Item>
                         <List.Item>MongoDB 
                         <Progress size='small' color='yellow' progress  percent={77} />
@@ -79,9 +135,9 @@ class AboutPage extends Component {
                         <List.Item>Firebase
                         <Progress size='small' color='yellow' progress  percent={75} />
                         </List.Item>
-                        <List.Item>Wordpress
+                        {/* <List.Item>Wordpress
                         <Progress size='small' color='yellow' progress  percent={70} />
-                        </List.Item>
+                        </List.Item> */}
                         <List.Item>Bootstrap
                         <Progress size='small' color='yellow' progress  percent={70} />
                         </List.Item>
@@ -101,7 +157,16 @@ class AboutPage extends Component {
                             <Card fluid>
                                 <Card.Header as='h3'>Education</Card.Header>
                                 <Card.Content>
+                                
+                                    Thomas Adewumi college, Oko, Kwara State.
+                                    <Card.Description>
+                                     Secondary School
+                                    </Card.Description>
+                                    <Card.Meta>
+                                        2007 - 2011
+                                    </Card.Meta>
 
+                                    <Divider />
                                     American University of Sharjah
                                     <Card.Description>
                                     B.S.C Chemical Engineering
