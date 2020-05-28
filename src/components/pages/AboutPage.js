@@ -45,7 +45,7 @@ class AboutPage extends Component {
                                         <Card.Content>
                                             <Card.Header>Experience</Card.Header>
                                             <Card.Description>
-                                                3.5 years
+                                                2.5 years
                                             </Card.Description>
                                         </Card.Content>
                                     </Card>
