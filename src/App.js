@@ -1,12 +1,9 @@
 import React, { Component } from 'react';
-import {Route, Link} from "react-router-dom";
 import { Button, Icon } from 'semantic-ui-react';
-import HomePage from './components/pages/HomePage';
 import AboutPage from './components/pages/AboutPage';
 import ProjectPage from './components/pages/ProjectPage';
 import ContactPage from './components/pages/ContactPage';
-import TopHeader from './components/header/TopHeader';
-// import ImagePage from './components/pages/ImagePage';
+// import TopHeader from './components/header/TopHeader';
 
 export default class App extends Component {
   constructor(props) {
@@ -18,7 +15,6 @@ export default class App extends Component {
   render() {
     return (
       <div style={{padding: 0, margin: 0}}>
-        {/* <TopHeader about={this.about} /> */}
         <div style={{width: '90%', margin: 'auto'}}>
           
           <br/>
