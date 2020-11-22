@@ -1,0 +1,64 @@
+[debug] [2020-11-22T19:07:43.929Z] ----------------------------------------------------------------------
+[debug] [2020-11-22T19:07:43.932Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy --only hosting
+[debug] [2020-11-22T19:07:43.933Z] CLI Version:   8.15.1
+[debug] [2020-11-22T19:07:43.933Z] Platform:      darwin
+[debug] [2020-11-22T19:07:43.933Z] Node Version:  v10.14.2
+[debug] [2020-11-22T19:07:43.934Z] Time:          Sun Nov 22 2020 20:07:43 GMT+0100 (West Africa Standard Time)
+[debug] [2020-11-22T19:07:43.934Z] ----------------------------------------------------------------------
+[debug] [2020-11-22T19:07:43.934Z] 
+[debug] [2020-11-22T19:07:44.033Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-11-22T19:07:44.034Z] > authorizing via signed-in user
+[debug] [2020-11-22T19:07:44.035Z] [iam] checking project ib-resume for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-11-22T19:07:44.038Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-11-22T19:07:44.039Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-11-22T19:07:44.673Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Sun, 22 Nov 2020 19:07:44 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-22T19:07:44.958Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/ib-resume:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-11-22T19:07:47.287Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 22 Nov 2020 19:07:46 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1115","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-22T19:07:47.290Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/ib-resume  
+ 
+[debug] [2020-11-22T19:07:47.919Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 22 Nov 2020 19:07:47 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'ib-resume'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2020-11-22T19:07:47.925Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/ib-resume/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2020-11-22T19:07:50.213Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 22 Nov 2020 19:07:50 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[ib-resume]: beginning deploy... 
+[info] i  hosting[ib-resume]: found 26 files in build 
+[debug] [2020-11-22T19:07:51.755Z] [hosting] hash cache [YnVpbGQ] stored for 26 files
+[debug] [2020-11-22T19:07:51.756Z] [hosting][hash queue][FINAL] {"max":1461,"min":697,"avg":860.3846153846154,"active":0,"complete":26,"success":26,"errored":0,"retried":0,"total":26,"elapsed":1473}
+[debug] [2020-11-22T19:07:51.756Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/ib-resume/versions/c602fd11371d61dc:populateFiles  
+ <request body omitted>
+[debug] [2020-11-22T19:07:54.700Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 22 Nov 2020 19:07:54 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-22T19:07:54.711Z] [hosting][populate queue][FINAL] {"max":2949,"min":2949,"avg":2949,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":2958}
+[debug] [2020-11-22T19:07:54.712Z] [hosting] uploads queued: 7
+[debug] [2020-11-22T19:08:17.607Z] [hosting][upload queue][FINAL] {"max":22906,"min":2896,"avg":8672.57142857143,"active":0,"complete":7,"success":7,"errored":0,"retried":0,"total":7,"elapsed":22906}
+[info] ✔  hosting[ib-resume]: file upload complete 
+[debug] [2020-11-22T19:08:17.609Z] [hosting] deploy completed after 27395ms
+[debug] [2020-11-22T19:08:17.612Z] [
+  {
+    "config": {
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "ib-resume"
+    },
+    "site": "ib-resume",
+    "version": "sites/ib-resume/versions/c602fd11371d61dc"
+  }
+]
+[info] i  hosting[ib-resume]: finalizing version... 
+[debug] [2020-11-22T19:08:17.613Z] >>> HTTP REQUEST PATCH https://firebasehosting.googleapis.com/v1beta1/sites/ib-resume/versions/c602fd11371d61dc?updateMask=status  
+ {"status":"FINALIZED"}
