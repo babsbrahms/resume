@@ -81,7 +81,7 @@ class AboutPage extends Component {
                                         <Card.Content>
                                             <Card.Header>Database</Card.Header>
                                             <Card.Description>
-                                                MongoDB, MY SQL
+                                                MongoDB
                                             </Card.Description>
                                         </Card.Content>
                                     </Card>
@@ -126,9 +126,9 @@ class AboutPage extends Component {
                         <List.Item>MongoDB 
                         <Progress size='small' color='yellow' progress  percent={77} />
                         </List.Item>
-                        <List.Item>SQL
+                        {/* <List.Item>SQL
                         <Progress size='small' color='yellow' progress  percent={70} />
-                        </List.Item>
+                        </List.Item> */}
                         <List.Item>Node JS
                         <Progress size='small' color='yellow' progress  percent={75} />
                         </List.Item>
