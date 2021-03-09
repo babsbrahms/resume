@@ -28,9 +28,9 @@ export default class App extends Component {
           <ContactPage/>
           <div style={{ position: 'fixed', bottom: '10px', right: '20px'}}>
             <div style={{ padding: 7, backgroundColor: 'white', borderRadius: 3, boxShadow: `1px 3px 1px skyblue`, zIndex: 1000, borderWidth: 3, borderColor: "skyblue", borderStyle: "solid", borderBottomWidth: 0 }}>
-            <Icon name='user' size='big' color='red' onClick={() => window.scrollTo(0,this.about.current.offsetTop)}/>
-            <Icon name='folder' size='big' color='red' onClick={() => window.scrollTo(0,this.projets.current.offsetTop)}/>
-            <Icon name='phone' size='big' color='red' onClick={() => window.scrollTo(0,this.contact.current.offsetTop)}/>
+            <Icon name='user' size='big' color="yellow" onClick={() => window.scrollTo(0,this.about.current.offsetTop)}/>
+            <Icon name='folder' size='big' color="yellow" onClick={() => window.scrollTo(0,this.projets.current.offsetTop)}/>
+            <Icon name='phone' size='big' color="yellow" onClick={() => window.scrollTo(0,this.contact.current.offsetTop)}/>
             </div>
           </div>
           <br />

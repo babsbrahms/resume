@@ -33,7 +33,7 @@ class AboutPage extends Component {
                 </Segment>
                 <Segment>
                     <div style={{ width: '100%', height: 'auto' }}>
-                        <div style={{ width: '100%', height: '100%', borderWidth: 1, borderColor: color,borderStyle: 'solid', backgroundColor: color, borderBottomRightRadius: h1 }}>
+                        <div id="about-bg" style={{ width: '100%', height: '100%', borderWidth: 1, borderColor: color,borderStyle: 'solid', backgroundColor: color, borderBottomRightRadius: h1 }}>
                             <Header as='h2' color='black'>
                                 <Header.Content>Ibrahim Olayinka Babatunde</Header.Content>
                             </Header>
@@ -45,7 +45,7 @@ class AboutPage extends Component {
                                         <Card.Content>
                                             <Card.Header>Experience</Card.Header>
                                             <Card.Description>
-                                                3.5 years
+                                                4+ years
                                             </Card.Description>
                                         </Card.Content>
                                     </Card>
@@ -106,46 +106,46 @@ class AboutPage extends Component {
                     <List link>
                         <List.Header as='h3'>Skills</List.Header>
                         <List.Item>HTML
-                        <Progress size='small' color='yellow' progress percent={90} />
+                        <Progress size='small' color='yellow' progress percent={90} style={{ backgroundColor: "#d1edfc" }} />
                         </List.Item>
                         <List.Item>CSS
-                        <Progress size='small' color='yellow' progress  percent={80} />
+                        <Progress size='small' color='yellow' progress  percent={80} style={{ backgroundColor: "#d1edfc" }} />
                         </List.Item>
                         <List.Item>JavaScript
-                        <Progress size='small' color='yellow' progress  percent={90} />
+                        <Progress size='small' color='yellow' progress  percent={90} style={{ backgroundColor: "#d1edfc" }} />
                         </List.Item>
                         <List.Item>React
-                        <Progress size='small' color='yellow' progress  percent={90} />
+                        <Progress size='small' color='yellow' progress  percent={90} style={{ backgroundColor: "#d1edfc" }} />
                         </List.Item>
                         <List.Item>React-Native 
-                        <Progress size='small' color='yellow' progress  percent={90} />
+                        <Progress size='small' color='yellow' progress  percent={90} style={{ backgroundColor: "#d1edfc" }} />
                         </List.Item>
                         <List.Item>Object Oriented Programming
-                        <Progress size='small' color='yellow' progress  percent={87} />
+                        <Progress size='small' color='yellow' progress  percent={87} style={{ backgroundColor: "#d1edfc" }} />
                         </List.Item>
                         <List.Item>MongoDB 
-                        <Progress size='small' color='yellow' progress  percent={77} />
+                        <Progress size='small' color='yellow' progress  percent={77} style={{ backgroundColor: "#d1edfc" }} />
                         </List.Item>
                         {/* <List.Item>SQL
                         <Progress size='small' color='yellow' progress  percent={70} />
                         </List.Item> */}
                         <List.Item>Node JS
-                        <Progress size='small' color='yellow' progress  percent={75} />
+                        <Progress size='small' color='yellow' progress  percent={80} style={{ backgroundColor: "#d1edfc" }} />
                         </List.Item>
                         <List.Item>Firebase
-                        <Progress size='small' color='yellow' progress  percent={75} />
+                        <Progress size='small' color='yellow' progress  percent={87} style={{ backgroundColor: "#d1edfc" }} />
                         </List.Item>
                         {/* <List.Item>Wordpress
                         <Progress size='small' color='yellow' progress  percent={70} />
                         </List.Item> */}
                         <List.Item>Bootstrap
-                        <Progress size='small' color='yellow' progress  percent={70} />
+                        <Progress size='small' color='yellow' progress  percent={75} style={{ backgroundColor: "#d1edfc" }} />
                         </List.Item>
                         <List.Item>Semantic UI
-                        <Progress size='small' color='yellow' progress  percent={80} />
+                        <Progress size='small' color='yellow' progress  percent={87} style={{ backgroundColor: "#d1edfc" }} />
                         </List.Item>
                         <List.Item>Linux Commands
-                        <Progress size='small' color='yellow' progress  percent={60} />
+                        <Progress size='small' color='yellow' progress  percent={60} style={{ backgroundColor: "#d1edfc" }} />
                         </List.Item>
                         
 
