@@ -135,9 +135,9 @@ class AboutPage extends Component {
                         <List.Item>Firebase
                         <Progress size='small' color='yellow' progress  percent={87} style={{ backgroundColor: "#d1edfc" }} />
                         </List.Item>
-                        {/* <List.Item>Wordpress
-                        <Progress size='small' color='yellow' progress  percent={70} />
-                        </List.Item> */}
+                        <List.Item>Github
+                        <Progress size='small' color='yellow' progress  percent={75} />
+                        </List.Item>
                         <List.Item>Bootstrap
                         <Progress size='small' color='yellow' progress  percent={75} style={{ backgroundColor: "#d1edfc" }} />
                         </List.Item>
@@ -158,7 +158,7 @@ class AboutPage extends Component {
                                 <Card.Header as='h3'>Education</Card.Header>
                                 <Card.Content>
                                 
-                                    Thomas Adewumi college, Oko, Kwara State.
+                                    {/* Thomas Adewumi college, Oko, Kwara State.
                                     <Card.Description>
                                      Secondary School
                                     </Card.Description>
@@ -166,7 +166,7 @@ class AboutPage extends Component {
                                         2007 - 2011
                                     </Card.Meta>
 
-                                    <Divider />
+                                    <Divider /> */}
                                     American University of Sharjah
                                     <Card.Description>
                                     B.S.C Chemical Engineering
