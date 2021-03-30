@@ -120,15 +120,15 @@ class AboutPage extends Component {
                         <List.Item>React-Native 
                         <Progress size='small' color='yellow' progress  percent={90} style={{ backgroundColor: "#d1edfc" }} />
                         </List.Item>
+                        <List.Item>Redux
+                        <Progress size='small' color='yellow' progress  percent={90} style={{ backgroundColor: "#d1edfc" }}  />
+                        </List.Item>
                         <List.Item>Object Oriented Programming
                         <Progress size='small' color='yellow' progress  percent={87} style={{ backgroundColor: "#d1edfc" }} />
                         </List.Item>
                         <List.Item>MongoDB 
                         <Progress size='small' color='yellow' progress  percent={77} style={{ backgroundColor: "#d1edfc" }} />
                         </List.Item>
-                        {/* <List.Item>SQL
-                        <Progress size='small' color='yellow' progress  percent={70} />
-                        </List.Item> */}
                         <List.Item>Node JS
                         <Progress size='small' color='yellow' progress  percent={80} style={{ backgroundColor: "#d1edfc" }} />
                         </List.Item>
@@ -136,7 +136,7 @@ class AboutPage extends Component {
                         <Progress size='small' color='yellow' progress  percent={87} style={{ backgroundColor: "#d1edfc" }} />
                         </List.Item>
                         <List.Item>Github
-                        <Progress size='small' color='yellow' progress  percent={75} />
+                        <Progress size='small' color='yellow' progress  percent={75} style={{ backgroundColor: "#d1edfc" }}  />
                         </List.Item>
                         <List.Item>Bootstrap
                         <Progress size='small' color='yellow' progress  percent={75} style={{ backgroundColor: "#d1edfc" }} />
