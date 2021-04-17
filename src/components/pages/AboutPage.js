@@ -109,7 +109,7 @@ class AboutPage extends Component {
                         <Progress size='small' color='yellow' progress percent={90} style={{ backgroundColor: "#d1edfc" }} />
                         </List.Item>
                         <List.Item>CSS
-                        <Progress size='small' color='yellow' progress  percent={80} style={{ backgroundColor: "#d1edfc" }} />
+                        <Progress size='small' color='yellow' progress  percent={85} style={{ backgroundColor: "#d1edfc" }} />
                         </List.Item>
                         <List.Item>JavaScript
                         <Progress size='small' color='yellow' progress  percent={90} style={{ backgroundColor: "#d1edfc" }} />
@@ -124,7 +124,16 @@ class AboutPage extends Component {
                         <Progress size='small' color='yellow' progress  percent={90} style={{ backgroundColor: "#d1edfc" }}  />
                         </List.Item>
                         <List.Item>Object Oriented Programming
-                        <Progress size='small' color='yellow' progress  percent={87} style={{ backgroundColor: "#d1edfc" }} />
+                        <Progress size='small' color='yellow' progress  percent={90} style={{ backgroundColor: "#d1edfc" }} />
+                        </List.Item>
+                        <List.Item>Typescript
+                        <Progress size='small' color='yellow' progress  percent={90} style={{ backgroundColor: "#d1edfc" }}  />
+                        </List.Item>
+                        <List.Item>Test-driven Development
+                        <Progress size='small' color='yellow' progress  percent={90} style={{ backgroundColor: "#d1edfc" }}  />
+                        </List.Item>
+                        <List.Item>GraphQL
+                        <Progress size='small' color='yellow' progress  percent={90} style={{ backgroundColor: "#d1edfc" }}  />
                         </List.Item>
                         <List.Item>MongoDB 
                         <Progress size='small' color='yellow' progress  percent={77} style={{ backgroundColor: "#d1edfc" }} />
