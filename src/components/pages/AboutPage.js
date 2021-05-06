@@ -105,14 +105,8 @@ class AboutPage extends Component {
                 <Segment>
                     <List link>
                         <List.Header as='h3'>Skills</List.Header>
-                        <List.Item>HTML
+                        <List.Item>BASIC: HTML, CSS, JavaScript
                         <Progress size='small' color='yellow' progress percent={90} style={{ backgroundColor: "#d1edfc" }} />
-                        </List.Item>
-                        <List.Item>CSS
-                        <Progress size='small' color='yellow' progress  percent={85} style={{ backgroundColor: "#d1edfc" }} />
-                        </List.Item>
-                        <List.Item>JavaScript
-                        <Progress size='small' color='yellow' progress  percent={90} style={{ backgroundColor: "#d1edfc" }} />
                         </List.Item>
                         <List.Item>React
                         <Progress size='small' color='yellow' progress  percent={90} style={{ backgroundColor: "#d1edfc" }} />
@@ -129,12 +123,12 @@ class AboutPage extends Component {
                         <List.Item>Typescript
                         <Progress size='small' color='yellow' progress  percent={90} style={{ backgroundColor: "#d1edfc" }}  />
                         </List.Item>
-                        <List.Item>Test-driven Development
+                        <List.Item>Test-driven Development (React Testing Library and Jest)
                         <Progress size='small' color='yellow' progress  percent={90} style={{ backgroundColor: "#d1edfc" }}  />
                         </List.Item>
-                        <List.Item>GraphQL
+                        {/* <List.Item>GraphQL
                         <Progress size='small' color='yellow' progress  percent={90} style={{ backgroundColor: "#d1edfc" }}  />
-                        </List.Item>
+                        </List.Item> */}
                         <List.Item>MongoDB 
                         <Progress size='small' color='yellow' progress  percent={77} style={{ backgroundColor: "#d1edfc" }} />
                         </List.Item>
@@ -147,10 +141,7 @@ class AboutPage extends Component {
                         <List.Item>Github
                         <Progress size='small' color='yellow' progress  percent={75} style={{ backgroundColor: "#d1edfc" }}  />
                         </List.Item>
-                        <List.Item>Bootstrap
-                        <Progress size='small' color='yellow' progress  percent={75} style={{ backgroundColor: "#d1edfc" }} />
-                        </List.Item>
-                        <List.Item>Semantic UI
+                        <List.Item>CSS LIBRARY: Semantic UI, Bootstrap
                         <Progress size='small' color='yellow' progress  percent={87} style={{ backgroundColor: "#d1edfc" }} />
                         </List.Item>
                         <List.Item>Linux Commands
