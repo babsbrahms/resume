@@ -88,7 +88,7 @@ class AboutPage extends Component {
 
                                     <Card>
                                         <Card.Content>
-                                            <Card.Header>cloud</Card.Header>
+                                            <Card.Header>Cloud</Card.Header>
                                             <Card.Description>
                                                 Firebase, Heroku and Digital Ocean
                                             </Card.Description>

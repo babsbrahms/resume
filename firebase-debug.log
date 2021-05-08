@@ -1,0 +1,14 @@
+[debug] [2021-05-06T17:27:55.449Z] ----------------------------------------------------------------------
+[debug] [2021-05-06T17:27:55.455Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2021-05-06T17:27:55.456Z] CLI Version:   8.15.1
+[debug] [2021-05-06T17:27:55.456Z] Platform:      darwin
+[debug] [2021-05-06T17:27:55.456Z] Node Version:  v10.14.2
+[debug] [2021-05-06T17:27:55.457Z] Time:          Thu May 06 2021 18:27:55 GMT+0100 (West Africa Standard Time)
+[debug] [2021-05-06T17:27:55.458Z] ----------------------------------------------------------------------
+[debug] [2021-05-06T17:27:55.458Z] 
+[debug] [2021-05-06T17:27:55.470Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-05-06T17:27:55.470Z] > authorizing via signed-in user
+[debug] [2021-05-06T17:27:55.470Z] [iam] checking project ib-resume for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-05-06T17:27:55.474Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-05-06T17:27:55.474Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
