@@ -72,7 +72,7 @@ class AboutPage extends Component {
                                         <Card.Content>
                                             <Card.Header>Specialization</Card.Header>
                                             <Card.Description>
-                                                Full Stack
+                                                Full Stack (Front End Focus)
                                             </Card.Description>
                                         </Card.Content>
                                     </Card>
@@ -81,7 +81,7 @@ class AboutPage extends Component {
                                         <Card.Content>
                                             <Card.Header>Database</Card.Header>
                                             <Card.Description>
-                                                MongoDB
+                                                MongoDB, Firebase
                                             </Card.Description>
                                         </Card.Content>
                                     </Card>
@@ -105,7 +105,7 @@ class AboutPage extends Component {
                 <Segment>
                     <List link>
                         <List.Header as='h3'>Skills</List.Header>
-                        <List.Item>BASIC: HTML, CSS, JavaScript
+                        <List.Item>BASICS: HTML, CSS, JavaScript
                         <Progress size='small' color='yellow' progress percent={90} style={{ backgroundColor: "#d1edfc" }} />
                         </List.Item>
                         <List.Item>React
