@@ -141,7 +141,7 @@ class AboutPage extends Component {
                         <List.Item>Firebase
                         <Progress size='small' color='yellow' progress  percent={87} style={{ backgroundColor: "#d1edfc" }} />
                         </List.Item>
-                        <List.Item>Github
+                        <List.Item>Git and Github
                         <Progress size='small' color='yellow' progress  percent={90} style={{ backgroundColor: "#d1edfc" }}  />
                         </List.Item>
                         {/* <List.Item>CSS LIBRARY: Semantic UI, Bootstrap
