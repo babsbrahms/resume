@@ -182,6 +182,15 @@ class AboutPage extends Component {
                                     </Card.Meta>
                                 </Card.Content>
                             </Card>
+
+                            <Card fluid>
+                                <Card.Header as='h3'>Github</Card.Header>
+                                <Card.Content>
+                                <a className="ui blue basic fluid big button" href={`https://github.com/babsbrahms`} target="__blank">
+                                    Visit Github
+                                </a>
+                                </Card.Content>
+                            </Card>
                         </Grid.Column>
 
                         <Grid.Column>
