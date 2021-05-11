@@ -90,7 +90,7 @@ class AboutPage extends Component {
                                         <Card.Content>
                                             <Card.Header>Cloud</Card.Header>
                                             <Card.Description>
-                                                Firebase, Heroku and Digital Ocean
+                                                Firebase, Heroku, Vercel and Netlify
                                             </Card.Description>
                                         </Card.Content>
                                     </Card>
@@ -106,19 +106,19 @@ class AboutPage extends Component {
                     <List link>
                         <List.Header as='h3'>Skills</List.Header>
                         <List.Item>BASICS: HTML, CSS, JavaScript
-                        <Progress size='small' color='yellow' progress percent={90} style={{ backgroundColor: "#d1edfc" }} />
+                        <Progress size='small' color='yellow' progress percent={95} style={{ backgroundColor: "#d1edfc" }} />
                         </List.Item>
                         <List.Item>React
-                        <Progress size='small' color='yellow' progress  percent={90} style={{ backgroundColor: "#d1edfc" }} />
+                        <Progress size='small' color='yellow' progress  percent={95} style={{ backgroundColor: "#d1edfc" }} />
                         </List.Item>
                         <List.Item>Next Js
-                        <Progress size='small' color='yellow' progress  percent={90} style={{ backgroundColor: "#d1edfc" }} />
+                        <Progress size='small' color='yellow' progress  percent={95} style={{ backgroundColor: "#d1edfc" }} />
                         </List.Item>
                         <List.Item>React-Native 
-                        <Progress size='small' color='yellow' progress  percent={90} style={{ backgroundColor: "#d1edfc" }} />
+                        <Progress size='small' color='yellow' progress  percent={95} style={{ backgroundColor: "#d1edfc" }} />
                         </List.Item>
                         <List.Item>Redux
-                        <Progress size='small' color='yellow' progress  percent={90} style={{ backgroundColor: "#d1edfc" }}  />
+                        <Progress size='small' color='yellow' progress  percent={95} style={{ backgroundColor: "#d1edfc" }}  />
                         </List.Item>
                         {/* <List.Item>Object Oriented Programming
                         <Progress size='small' color='yellow' progress  percent={90} style={{ backgroundColor: "#d1edfc" }} />
@@ -132,17 +132,17 @@ class AboutPage extends Component {
                         <List.Item>GraphQL
                         <Progress size='small' color='yellow' progress  percent={90} style={{ backgroundColor: "#d1edfc" }}  />
                         </List.Item>
-                        <List.Item>MongoDB 
-                        <Progress size='small' color='yellow' progress  percent={80} style={{ backgroundColor: "#d1edfc" }} />
-                        </List.Item>
-                        <List.Item>Node JS
-                        <Progress size='small' color='yellow' progress  percent={80} style={{ backgroundColor: "#d1edfc" }} />
-                        </List.Item>
                         <List.Item>Firebase
-                        <Progress size='small' color='yellow' progress  percent={87} style={{ backgroundColor: "#d1edfc" }} />
+                        <Progress size='small' color='yellow' progress  percent={90} style={{ backgroundColor: "#d1edfc" }} />
                         </List.Item>
                         <List.Item>Git and Github
                         <Progress size='small' color='yellow' progress  percent={90} style={{ backgroundColor: "#d1edfc" }}  />
+                        </List.Item>
+                        <List.Item>MongoDB 
+                        <Progress size='small' color='yellow' progress  percent={85} style={{ backgroundColor: "#d1edfc" }} />
+                        </List.Item>
+                        <List.Item>Node JS
+                        <Progress size='small' color='yellow' progress  percent={85} style={{ backgroundColor: "#d1edfc" }} />
                         </List.Item>
                         {/* <List.Item>CSS LIBRARY: Semantic UI, Bootstrap
                         <Progress size='small' color='yellow' progress  percent={87} style={{ backgroundColor: "#d1edfc" }} />
