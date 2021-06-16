@@ -126,7 +126,7 @@ class AboutPage extends Component {
                         <List.Item>Typescript
                         <Progress size='small' color='yellow' progress  percent={90} style={{ backgroundColor: "#d1edfc" }}  />
                         </List.Item>
-                        <List.Item>Test-driven Development (React Testing Library and Jest)
+                        <List.Item>Testing (React Testing Library, Jest and Cypress)
                         <Progress size='small' color='yellow' progress  percent={90} style={{ backgroundColor: "#d1edfc" }}  />
                         </List.Item>
                         <List.Item>GraphQL
@@ -205,7 +205,7 @@ class AboutPage extends Component {
                                     Tools: React, Adobe-Illustrator.
                                     </Card.Description>
                                     <Card.Meta>
-                                        2017-2019
+                                        2017-2018
                                     </Card.Meta>
                                     <Divider />
                                     PrepVENT
@@ -216,15 +216,15 @@ class AboutPage extends Component {
                                     Tools: React, React-Native, Firebase, Node JS.
                                     </Card.Description>
                                     <Card.Meta>
-                                        2019-2019
+                                        2018-2019
                                     </Card.Meta>
                                     <Divider />
-                                    Nation Youth Service Corp (NYSC)
+                                    Tietoon
                                     <Card.Description>
-                                        I work at the National Automotive Design And Development Council
+                                    Tools: React, Firebase, Cypress
                                     </Card.Description>
                                     <Card.Meta>
-                                        2019-2020
+                                        2020 - now
                                     </Card.Meta>
                                 </Card.Content>
                             </Card>
