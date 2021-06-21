@@ -20,12 +20,24 @@ export default class App extends Component {
           <br/>
           <div ref={this.about}></div>
           <AboutPage/>
-
+          <br />
+          <br />
+          <br />
+          <br />
+          
           <div ref={this.projets}></div>
           <ProjectPage />
+          <br />
+          <br />
+          <br />
+          <br />
           
           <div ref={this.contact}></div>
           <ContactPage/>
+          <br />
+          <br />
+          <br />
+          <br />
           <div style={{ position: 'fixed', bottom: '10px', right: '20px'}}>
             <div style={{ padding: 7, backgroundColor: 'white', borderRadius: 3, boxShadow: `1px 3px 1px skyblue`, zIndex: 1000, borderWidth: 3, borderColor: "skyblue", borderStyle: "solid", borderBottomWidth: 0 }}>
             <Icon name='user' size='big' color="yellow" onClick={() => window.scrollTo(0,this.about.current.offsetTop)}/>

@@ -1,36 +1,47 @@
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
-body{
-    background: rgba(255,229,168,1);  /* fallback for old browsers */
-    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,229,168,1) 0%, #d1edfc 100.7% );
-    /* background: linear-gradient(to bottom right, #ffff99 0%, #ff5050 100%) no-repeat fixed center;; */
-    color:#555;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size:16px;
-    line-height:1,6em;
-    margin:0; 
-    overflow-y: initial;
+body {
+  background: rgba(255, 229, 168, 1); /* fallback for old browsers */
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(255, 229, 168, 1) 0%,
+    #d1edfc 100.7%
+  );
+  /* background: linear-gradient(to bottom right, #ffff99 0%, #ff5050 100%) no-repeat fixed center;; */
+  color: #555;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1, 6em;
+  margin: 0;
+  overflow-y: initial;
 }
 
-.container{
-    width: 90%;
-    margin:auto;
-    overflow-x: hidden; 
-
+.container {
+  width: 90%;
+  margin: auto;
+  overflow-x: hidden;
 }
 
-.header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    /* background-color: #ff6666; */
-    background: rgba(255,229,168,1);  /* fallback for old browsers */
-    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,229,168,1) 0%, #d1edfc 100.7% );
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  /* background-color: #ff6666; */
+  background: rgba(255, 229, 168, 1); /* fallback for old browsers */
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(255, 229, 168, 1) 0%,
+    #d1edfc 100.7%
+  );
 }
 
 #about-bg {
-    background: rgba(255,229,168,1);  /* fallback for old browsers */
-    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,229,168,1) 0%, #d1edfc 100.7% );
+  background: rgba(255, 229, 168, 1); /* fallback for old browsers */
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(255, 229, 168, 1) 0%,
+    #d1edfc 100.7%
+  );
 }

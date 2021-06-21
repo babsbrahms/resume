@@ -102,6 +102,7 @@ class AboutPage extends Component {
                      
 
                 </Segment>
+                <br />
                 <Segment>
                     <List link>
                         <List.Header as='h3'>Skills</List.Header>
@@ -154,6 +155,7 @@ class AboutPage extends Component {
 
                     </List>
                 </Segment>
+                <br />
                 <Segment>
                     <Grid columns='2' stackable>
                         <Grid.Column>
